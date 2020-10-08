@@ -1,0 +1,5 @@
+--------------------------------------------------------------------
+Java options: -Dspark.storage.memoryFraction=0.66 -Dspark.serializer=org.apache.spark.serializer.JavaSerializer -Dspark.locality.wait=60000000
+Options: SchedulerThroughputTest --num-tasks=5000 --num-trials=10 --inter-trial-wait=3
+--------------------------------------------------------------------
+python: can't open file 'D:/AProject/PythonProject/lib/pyspark-tests/core_tests.py': [Errno 2] No such file or directory

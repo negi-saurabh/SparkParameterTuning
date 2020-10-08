@@ -1,0 +1,233 @@
+format version: 5
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes
+compile options:
+0 items
+javac options:
+0 items
+compiler version:
+1 items
+0 -> 2.10.4
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> true
+products:
+16 items
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$1$$anonfun$apply$1.class
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$1$$anonfun$apply$2.class
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$1$$anonfun$apply$3.class
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$1$$anonfun$apply$4.class
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$1$$anonfun$apply$5.class
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$1$$anonfun$apply$6.class
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$1$$anonfun$apply$7.class
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$1$$anonfun$apply$8$$anonfun$apply$9$$anonfun$1.class
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$1$$anonfun$apply$8$$anonfun$apply$9.class
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$1$$anonfun$apply$8.class
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$1.class
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$2.class
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$3.class
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$4.class
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$.class
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild.class
+binary dependencies:
+10 items
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> C:\Users\Saurabh\.ivy2\cache\org.scala-sbt\apply-macro\jars\apply-macro-0.13.6.jar
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> C:\Users\Saurabh\.ivy2\cache\org.scala-sbt\collections\jars\collections-0.13.6.jar
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> C:\Users\Saurabh\.ivy2\cache\org.scala-sbt\ivy\jars\ivy-0.13.6.jar
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> C:\Users\Saurabh\.ivy2\cache\org.scala-sbt\main-settings\jars\main-settings-0.13.6.jar
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> C:\Users\Saurabh\.ivy2\cache\org.scala-sbt\main\jars\main-0.13.6.jar
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> C:\Users\Saurabh\.ivy2\cache\org.scala-sbt\sbt\jars\sbt-0.13.6.jar
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> C:\Users\Saurabh\.ivy2\cache\org.scala-sbt\task-system\jars\task-system-0.13.6.jar
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> C:\Users\Saurabh\.ivy2\cache\scala_2.10\sbt_0.13\com.eed3si9n\sbt-assembly\jars\sbt-assembly-0.11.2.jar
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> C:\Users\Saurabh\.sbt\boot\scala-2.10.4\lib\scala-library.jar
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> D:\AProject\Java\jdk1.8.0_261\jre\lib\rt.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+0 items
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+16 items
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> SparkTestsBuild
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> SparkTestsBuild$
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> SparkTestsBuild$$anonfun$root$1
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> SparkTestsBuild$$anonfun$root$1$$anonfun$apply$1
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> SparkTestsBuild$$anonfun$root$1$$anonfun$apply$2
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> SparkTestsBuild$$anonfun$root$1$$anonfun$apply$3
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> SparkTestsBuild$$anonfun$root$1$$anonfun$apply$4
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> SparkTestsBuild$$anonfun$root$1$$anonfun$apply$5
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> SparkTestsBuild$$anonfun$root$1$$anonfun$apply$6
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> SparkTestsBuild$$anonfun$root$1$$anonfun$apply$7
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> SparkTestsBuild$$anonfun$root$1$$anonfun$apply$8
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> SparkTestsBuild$$anonfun$root$1$$anonfun$apply$8$$anonfun$apply$9
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> SparkTestsBuild$$anonfun$root$1$$anonfun$apply$8$$anonfun$apply$9$$anonfun$1
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> SparkTestsBuild$$anonfun$root$2
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> SparkTestsBuild$$anonfun$root$3
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> SparkTestsBuild$$anonfun$root$4
+used names:
+89 items
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> !=
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> %
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> %%
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> &&
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> ++
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> ++=
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> ::
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> :=
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> <init>
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> ==
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> >=
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> Append
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> AssemblyKeys
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> Build
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> FullInstance
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> InitializeInstance
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> Keys
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> MergeStrategy
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> Nil
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> PathList
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> Plugin
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> Project
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> Seq
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> SparkTestsBuild
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> appendN
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> appendSeq
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> apply
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> asInstanceOf
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> assembly
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> assemblyOption
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> assemblySettings
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> canBuildFrom
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> collection
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> concat
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> discard
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> drop
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> endsWith
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> file
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> first
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> get
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> immutable
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> in
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> isEmpty
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> isInstanceOf
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> last
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> lengthCompare
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> libraryDependencies
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> map
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> mergeStrategy
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> moduleIDConfigurable
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> organization
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> outputPath
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> package
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> ps
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> pure
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> root
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> sbt
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> sbtassembly
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> scala
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> scalaVersion
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> set
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> test
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> toGroupID
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> toLowerCase
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> transform
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> unapplySeq
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> unary_!
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> version
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> x$10
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> x$11
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> x$12
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> x$13
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> x$14
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> x$15
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> x$16
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> x$17
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> x$18
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> x$19
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> x$20
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> x$21
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> x$3
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> x$4
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> x$5
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> x$6
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> x$7
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> x$8
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> x$9
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> xs
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> ~=
+product stamps:
+16 items
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$1$$anonfun$apply$1.class -> lastModified(1601294656597)
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$1$$anonfun$apply$2.class -> lastModified(1601294656600)
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$1$$anonfun$apply$3.class -> lastModified(1601294656603)
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$1$$anonfun$apply$4.class -> lastModified(1601294656606)
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$1$$anonfun$apply$5.class -> lastModified(1601294656609)
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$1$$anonfun$apply$6.class -> lastModified(1601294656612)
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$1$$anonfun$apply$7.class -> lastModified(1601294656616)
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$1$$anonfun$apply$8$$anonfun$apply$9$$anonfun$1.class -> lastModified(1601294656631)
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$1$$anonfun$apply$8$$anonfun$apply$9.class -> lastModified(1601294656627)
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$1$$anonfun$apply$8.class -> lastModified(1601294656618)
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$1.class -> lastModified(1601294656593)
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$2.class -> lastModified(1601294656634)
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$3.class -> lastModified(1601294656636)
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$$anonfun$root$4.class -> lastModified(1601294656639)
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild$.class -> lastModified(1601294656534)
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\target\scala-2.10\sbt-0.13\classes\SparkTestsBuild.class -> lastModified(1601294656515)
+source stamps:
+1 items
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> hash(e62fc23c12b59984f4f15aa87b6205e0e82011f3)
+binary stamps:
+10 items
+C:\Users\Saurabh\.ivy2\cache\org.scala-sbt\apply-macro\jars\apply-macro-0.13.6.jar -> lastModified(1429631326000)
+C:\Users\Saurabh\.ivy2\cache\org.scala-sbt\collections\jars\collections-0.13.6.jar -> lastModified(1429632525000)
+C:\Users\Saurabh\.ivy2\cache\org.scala-sbt\ivy\jars\ivy-0.13.6.jar -> lastModified(1429629259000)
+C:\Users\Saurabh\.ivy2\cache\org.scala-sbt\main-settings\jars\main-settings-0.13.6.jar -> lastModified(1429630413000)
+C:\Users\Saurabh\.ivy2\cache\org.scala-sbt\main\jars\main-0.13.6.jar -> lastModified(1429631899000)
+C:\Users\Saurabh\.ivy2\cache\org.scala-sbt\sbt\jars\sbt-0.13.6.jar -> lastModified(1429630634000)
+C:\Users\Saurabh\.ivy2\cache\org.scala-sbt\task-system\jars\task-system-0.13.6.jar -> lastModified(1429631248000)
+C:\Users\Saurabh\.ivy2\cache\scala_2.10\sbt_0.13\com.eed3si9n\sbt-assembly\jars\sbt-assembly-0.11.2.jar -> lastModified(1395262337000)
+C:\Users\Saurabh\.sbt\boot\scala-2.10.4\lib\scala-library.jar -> lastModified(1395179187000)
+D:\AProject\Java\jdk1.8.0_261\jre\lib\rt.jar -> lastModified(1598111309057)
+class names:
+10 items
+C:\Users\Saurabh\.ivy2\cache\org.scala-sbt\apply-macro\jars\apply-macro-0.13.6.jar -> sbt.appmacro.Instance$
+C:\Users\Saurabh\.ivy2\cache\org.scala-sbt\collections\jars\collections-0.13.6.jar -> sbt.Init
+C:\Users\Saurabh\.ivy2\cache\org.scala-sbt\ivy\jars\ivy-0.13.6.jar -> sbt.impl.ModuleIDConfigurable
+C:\Users\Saurabh\.ivy2\cache\org.scala-sbt\main-settings\jars\main-settings-0.13.6.jar -> sbt.ProjectReference
+C:\Users\Saurabh\.ivy2\cache\org.scala-sbt\main\jars\main-0.13.6.jar -> sbt.Build
+C:\Users\Saurabh\.ivy2\cache\org.scala-sbt\sbt\jars\sbt-0.13.6.jar -> sbt.package$
+C:\Users\Saurabh\.ivy2\cache\org.scala-sbt\task-system\jars\task-system-0.13.6.jar -> sbt.Task
+C:\Users\Saurabh\.ivy2\cache\scala_2.10\sbt_0.13\com.eed3si9n\sbt-assembly\jars\sbt-assembly-0.11.2.jar -> sbtassembly.AssemblyOption
+C:\Users\Saurabh\.sbt\boot\scala-2.10.4\lib\scala-library.jar -> scala.Predef$
+D:\AProject\Java\jdk1.8.0_261\jre\lib\rt.jar -> java.lang.Object
+internal apis:
+1 items
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBxRiTNAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAGnNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cGBeigt0AAZub3RpZnlzcQB+AAzSwksTdAAEd2FpdHNxAH4ADC06Pxh0AA0kYXNJbnN0YW5jZU9mc3EAfgAMLz0TzXQADGJ1aWxkTG9hZGVyc3NxAH4ADOtIowF0AARyb290c3EAfgAMZ0o7RXQABmVxdWFsc3NxAH4ADHjRiWR0AAxhc0luc3RhbmNlT2ZzcQB+AAznrabddAAScHJvamVjdERlZmluaXRpb25zc3EAfgAMI4gJknQADHN5bmNocm9uaXplZHNxAH4ADLu2cK90AA0kaXNJbnN0YW5jZU9mc3EAfgAMZlVT83QACW5vdGlmeUFsbHNxAH4ADF9CeiR0AAtyb290UHJvamVjdHNxAH4ADKEUTvl0AAxpc0luc3RhbmNlT2ZzcQB+AAyosVBUdAACPT1zcQB+AAzhXpbSdAAFY2xvbmVzcQB+AAwlLauRdAAIdG9TdHJpbmdzcQB+AAzBVBtGdAAPU3BhcmtUZXN0c0J1aWxkc3EAfgAML115nnQAAiE9c3EAfgAM61Qzy3QACHByb2plY3Rzc3EAfgAMOpbD5XQACGdldENsYXNzc3EAfgAMi3U2E3QAAm5lc3EAfgAMcnPdcXQAAmVxc3EAfgAMs8110HQACHNldHRpbmdzc3EAfgAMC5gYeXQAAiMjc3EAfgAMIco993QACGZpbmFsaXplc3EAfgAMACETEXQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AS3hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHEAfgAvdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4AY3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AYgBwc3EAfgBnc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AEtMAAlpbmhlcml0ZWRxAH4AS0wAB3BhcmVudHNxAH4AS3hxAH4Aa3NxAH4AYgBwc3EAfgBndXEAfgBGAAAAAHNxAH4AYgBwc3EAfgBndXEAfgBGAAAAAHNxAH4AYgBwc3EAfgBndXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAANzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBqdAAFQnVpbGRzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AGpzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQAA3NidHNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCIc3EAfgB7dAAGT2JqZWN0c3EAfgB/c3EAfgCCdXEAfgCFAAAAA3NxAH4Ah3QABGphdmFzcQB+AId0AARsYW5ncQB+AIxzcQB+AHt0AANBbnlzcQB+AH9zcQB+AIJ1cQB+AIUAAAACc3EAfgCHdAAFc2NhbGFxAH4AjHVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAAAc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAF01JlbtXVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AIREOlxBUHJvamVjdFxCZW5jaG1hcmtfc3Bhcmstc3FsLXBlcmZfRGF0YWJyaWNrc1xTcGFya1RoZXNpc1xzcGFyay1wZXJmLW1hc3RlclxzcGFyay10ZXN0c1xwcm9qZWN0XHRhcmdldFxzY2FsYS0yLjEwXHNidC0wLjEzXGNsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABTmL8I8ErWZhPTxWqh7YgXg6CAR8w==
+external apis:
+0 items
+source infos:
+1 items
+D:\AProject\Benchmark_spark-sql-perf_Databricks\SparkThesis\spark-perf-master\spark-tests\project\SparkTestsBuild.scala -> 
+AAAAAAAAAAA=
+compilations:
+1 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABdNSZW7V1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAhEQ6XEFQcm9qZWN0XEJlbmNobWFya19zcGFyay1zcWwtcGVyZl9EYXRhYnJpY2tzXFNwYXJrVGhlc2lzXHNwYXJrLXBlcmYtbWFzdGVyXHNwYXJrLXRlc3RzXHByb2plY3RcdGFyZ2V0XHNjYWxhLTIuMTBcc2J0LTAuMTNcY2xhc3Nlc3QAAS8=
