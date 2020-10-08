@@ -18,7 +18,7 @@ from config_utils import FlagSet, JavaOptionSet, OptionSet, ConstantOption
 # ================================ #
 
 # Point to an installation of Spark on the cluster.
-SPARK_HOME_DIR = "C:\spark"
+SPARK_HOME_DIR = "/usr/local/spark"
 
 # Use a custom configuration directory
 SPARK_CONF_DIR = SPARK_HOME_DIR + "/conf"

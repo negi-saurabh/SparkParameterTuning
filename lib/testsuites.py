@@ -177,7 +177,7 @@ class PythonTests(PerfTestSuite):
     def get_spark_submit_cmd(cls, cluster, config, main_class_or_script, opt_list, stdout_filename,
                              stderr_filename):
         spark_submit = "%s/bin/spark-submit" % cluster.spark_home
-        cmd = "%s --master %s ../pyspark-tests/%s %s 1>> %s 2>> %s" % (
+        cmd = "%s --master %s pyspark-tests/%s %s 1>> %s 2>> %s" % (
             spark_submit, config.SPARK_CLUSTER_URL, main_class_or_script, " ".join(opt_list),
             stdout_filename, stderr_filename)
         return cmd
@@ -211,7 +211,7 @@ class PiValueTest(JVMPerfTestSuite):
     def get_spark_submit_cmd(cls, cluster, config, main_class_or_script, opt_list, stdout_filename,
                              stderr_filename):
         spark_submit = "%s/bin/spark-submit" % cluster.spark_home
-        cmd = "%s --master %s ../piValue-test/%s %s 1>> %s 2>> %s" % (
+        cmd = "%s --master %s piValue-test/%s %s 1>> %s 2>> %s" % (
             spark_submit, config.SPARK_CLUSTER_URL, main_class_or_script, " ".join(opt_list),
             stdout_filename, stderr_filename)
         return cmd
