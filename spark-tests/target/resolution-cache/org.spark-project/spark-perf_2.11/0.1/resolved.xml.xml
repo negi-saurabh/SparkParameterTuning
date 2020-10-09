@@ -4,7 +4,7 @@
 		module="spark-perf_2.11"
 		revision="0.1"
 		status="integration"
-		publication="20200928140417"
+		publication="20201009023626"
 	>
 		<description>
 		spark-perf
