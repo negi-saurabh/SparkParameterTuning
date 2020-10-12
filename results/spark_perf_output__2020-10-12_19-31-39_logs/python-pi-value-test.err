@@ -1,0 +1,636 @@
+--------------------------------------------------------------------
+Java options: -Dspark.storage.memoryFraction=0.66 -Dspark.serializer=org.apache.spark.serializer.JavaSerializer -Dspark.locality.wait=60000000
+Options: Valueofpi --num-tasks=10000000 --num-trials=10 --inter-trial-wait=3
+--------------------------------------------------------------------
+20/10/12 19:32:04 DEBUG NativeCodeLoader: Trying to load the custom-built native-hadoop library...
+OpenJDK Server VM warning: You have loaded library /usr/local/hadoop/lib/native/libhadoop.so.1.0.0 which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+20/10/12 19:32:05 DEBUG NativeCodeLoader: Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: /usr/local/hadoop/lib/native/libhadoop.so.1.0.0: /usr/local/hadoop/lib/native/libhadoop.so.1.0.0: wrong ELF class: ELFCLASS64 (Possible cause: architecture word width mismatch)
+20/10/12 19:32:05 DEBUG NativeCodeLoader: java.library.path=:/usr/local/hadoop/lib/native:/usr/java/packages/lib/i386:/usr/lib/i386-linux-gnu/jni:/lib/i386-linux-gnu:/usr/lib/i386-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+20/10/12 19:32:05 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/10/12 19:32:05 INFO SparkContext: Running Spark version 2.4.6
+20/10/12 19:32:05 WARN SparkConf: Detected deprecated memory fraction settings: [spark.storage.memoryFraction]. As of Spark 1.6, execution and storage memory management are unified. All memory fractions used in the old model are now deprecated and no longer read. If you wish to use the old memory management, you may explicitly enable `spark.memory.useLegacyMode` (not recommended).
+20/10/12 19:32:05 INFO SparkContext: Submitted application: Pi Value Runner
+20/10/12 19:32:05 INFO SecurityManager: Changing view acls to: spark
+20/10/12 19:32:05 INFO SecurityManager: Changing modify acls to: spark
+20/10/12 19:32:05 INFO SecurityManager: Changing view acls groups to: 
+20/10/12 19:32:05 INFO SecurityManager: Changing modify acls groups to: 
+20/10/12 19:32:05 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(spark); groups with view permissions: Set(); users  with modify permissions: Set(spark); groups with modify permissions: Set()
+20/10/12 19:32:06 INFO Utils: Successfully started service 'sparkDriver' on port 32935.
+20/10/12 19:32:06 INFO SparkEnv: Registering MapOutputTracker
+20/10/12 19:32:06 INFO SparkEnv: Registering BlockManagerMaster
+20/10/12 19:32:06 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+20/10/12 19:32:06 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+20/10/12 19:32:06 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-66a8a5ea-9508-413d-b929-426f8b02b583
+20/10/12 19:32:06 INFO MemoryStore: MemoryStore started with capacity 366.1 MB
+20/10/12 19:32:06 INFO SparkEnv: Registering OutputCommitCoordinator
+20/10/12 19:32:06 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+20/10/12 19:32:06 INFO Utils: Successfully started service 'SparkUI' on port 4041.
+20/10/12 19:32:06 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://spark-master:4041
+20/10/12 19:32:06 INFO Executor: Starting executor ID driver on host localhost
+20/10/12 19:32:06 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 42553.
+20/10/12 19:32:06 INFO NettyBlockTransferService: Server created on spark-master:42553
+20/10/12 19:32:06 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+20/10/12 19:32:06 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, spark-master, 42553, None)
+20/10/12 19:32:06 INFO BlockManagerMasterEndpoint: Registering block manager spark-master:42553 with 366.1 MB RAM, BlockManagerId(driver, spark-master, 42553, None)
+20/10/12 19:32:06 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, spark-master, 42553, None)
+20/10/12 19:32:06 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, spark-master, 42553, None)
+20/10/12 19:32:07 INFO EventLoggingListener: Logging events to file:/usr/local/spark/logs/local-1602523926528
+20/10/12 19:32:13 INFO SparkContext: Starting job: count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43
+20/10/12 19:32:13 INFO DAGScheduler: Got job 0 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) with 4 output partitions
+20/10/12 19:32:13 INFO DAGScheduler: Final stage: ResultStage 0 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43)
+20/10/12 19:32:13 INFO DAGScheduler: Parents of final stage: List()
+20/10/12 19:32:13 INFO DAGScheduler: Missing parents: List()
+20/10/12 19:32:13 INFO DAGScheduler: Submitting ResultStage 0 (PythonRDD[1] at count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43), which has no missing parents
+20/10/12 19:32:13 WARN SizeEstimator: Failed to check whether UseCompressedOops is set; assuming yes
+20/10/12 19:32:13 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 6.0 KB, free 366.1 MB)
+20/10/12 19:32:13 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 4.0 KB, free 366.1 MB)
+20/10/12 19:32:13 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on spark-master:42553 (size: 4.0 KB, free: 366.1 MB)
+20/10/12 19:32:13 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1163
+20/10/12 19:32:13 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 0 (PythonRDD[1] at count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+20/10/12 19:32:13 INFO TaskSchedulerImpl: Adding task set 0.0 with 4 tasks
+20/10/12 19:32:13 WARN TaskSetManager: Stage 0 contains a task of very large size (12132 KB). The maximum recommended task size is 100 KB.
+20/10/12 19:32:13 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 12423264 bytes)
+20/10/12 19:32:13 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, localhost, executor driver, partition 1, PROCESS_LOCAL, 12559732 bytes)
+20/10/12 19:32:13 INFO TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2, localhost, executor driver, partition 2, PROCESS_LOCAL, 12554592 bytes)
+20/10/12 19:32:14 INFO TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3, localhost, executor driver, partition 3, PROCESS_LOCAL, 12557810 bytes)
+20/10/12 19:32:14 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+20/10/12 19:32:14 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+20/10/12 19:32:14 INFO Executor: Running task 2.0 in stage 0.0 (TID 2)
+20/10/12 19:32:14 INFO Executor: Running task 3.0 in stage 0.0 (TID 3)
+20/10/12 19:32:16 INFO PythonRunner: Times: total = 2280, boot = 220, init = 29, finish = 2031
+20/10/12 19:32:16 INFO PythonRunner: Times: total = 2306, boot = 222, init = 15, finish = 2069
+20/10/12 19:32:16 INFO Executor: Finished task 1.0 in stage 0.0 (TID 1). 1421 bytes result sent to driver
+20/10/12 19:32:16 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1421 bytes result sent to driver
+20/10/12 19:32:16 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 2739 ms on localhost (executor driver) (1/4)
+20/10/12 19:32:16 INFO PythonAccumulatorV2: Connected to AccumulatorServer at host: 127.0.0.1 port: 48733
+20/10/12 19:32:16 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 2803 ms on localhost (executor driver) (2/4)
+20/10/12 19:32:16 INFO PythonRunner: Times: total = 2455, boot = 209, init = 28, finish = 2218
+20/10/12 19:32:16 INFO Executor: Finished task 2.0 in stage 0.0 (TID 2). 1421 bytes result sent to driver
+20/10/12 19:32:16 INFO TaskSetManager: Finished task 2.0 in stage 0.0 (TID 2) in 2852 ms on localhost (executor driver) (3/4)
+20/10/12 19:32:17 INFO PythonRunner: Times: total = 2785, boot = 198, init = 33, finish = 2554
+20/10/12 19:32:17 INFO Executor: Finished task 3.0 in stage 0.0 (TID 3). 1421 bytes result sent to driver
+20/10/12 19:32:17 INFO TaskSetManager: Finished task 3.0 in stage 0.0 (TID 3) in 3165 ms on localhost (executor driver) (4/4)
+20/10/12 19:32:17 INFO DAGScheduler: ResultStage 0 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) finished in 3.467 s
+20/10/12 19:32:17 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+20/10/12 19:32:17 INFO DAGScheduler: Job 0 finished: count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43, took 3.667771 s
+20/10/12 19:32:23 INFO ContextCleaner: Cleaned accumulator 20
+20/10/12 19:32:23 INFO ContextCleaner: Cleaned accumulator 14
+20/10/12 19:32:23 INFO ContextCleaner: Cleaned accumulator 11
+20/10/12 19:32:23 INFO ContextCleaner: Cleaned accumulator 24
+20/10/12 19:32:23 INFO ContextCleaner: Cleaned accumulator 21
+20/10/12 19:32:23 INFO ContextCleaner: Cleaned accumulator 25
+20/10/12 19:32:23 INFO ContextCleaner: Cleaned accumulator 1
+20/10/12 19:32:23 INFO BlockManagerInfo: Removed broadcast_0_piece0 on spark-master:42553 in memory (size: 4.0 KB, free: 366.1 MB)
+20/10/12 19:32:23 INFO ContextCleaner: Cleaned accumulator 10
+20/10/12 19:32:23 INFO ContextCleaner: Cleaned accumulator 16
+20/10/12 19:32:23 INFO ContextCleaner: Cleaned accumulator 4
+20/10/12 19:32:23 INFO ContextCleaner: Cleaned accumulator 6
+20/10/12 19:32:23 INFO ContextCleaner: Cleaned accumulator 22
+20/10/12 19:32:23 INFO ContextCleaner: Cleaned accumulator 17
+20/10/12 19:32:23 INFO ContextCleaner: Cleaned accumulator 23
+20/10/12 19:32:23 INFO ContextCleaner: Cleaned accumulator 3
+20/10/12 19:32:23 INFO ContextCleaner: Cleaned accumulator 8
+20/10/12 19:32:23 INFO ContextCleaner: Cleaned accumulator 5
+20/10/12 19:32:23 INFO ContextCleaner: Cleaned accumulator 19
+20/10/12 19:32:23 INFO ContextCleaner: Cleaned accumulator 18
+20/10/12 19:32:23 INFO ContextCleaner: Cleaned accumulator 12
+20/10/12 19:32:23 INFO ContextCleaner: Cleaned accumulator 15
+20/10/12 19:32:23 INFO ContextCleaner: Cleaned accumulator 13
+20/10/12 19:32:23 INFO ContextCleaner: Cleaned accumulator 9
+20/10/12 19:32:23 INFO ContextCleaner: Cleaned accumulator 7
+20/10/12 19:32:23 INFO ContextCleaner: Cleaned accumulator 2
+20/10/12 19:32:23 INFO SparkContext: Starting job: count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43
+20/10/12 19:32:23 INFO DAGScheduler: Got job 1 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) with 4 output partitions
+20/10/12 19:32:23 INFO DAGScheduler: Final stage: ResultStage 1 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43)
+20/10/12 19:32:23 INFO DAGScheduler: Parents of final stage: List()
+20/10/12 19:32:23 INFO DAGScheduler: Missing parents: List()
+20/10/12 19:32:23 INFO DAGScheduler: Submitting ResultStage 1 (PythonRDD[3] at count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43), which has no missing parents
+20/10/12 19:32:23 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 6.0 KB, free 366.1 MB)
+20/10/12 19:32:23 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.0 KB, free 366.1 MB)
+20/10/12 19:32:23 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on spark-master:42553 (size: 4.0 KB, free: 366.1 MB)
+20/10/12 19:32:23 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1163
+20/10/12 19:32:23 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 1 (PythonRDD[3] at count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+20/10/12 19:32:23 INFO TaskSchedulerImpl: Adding task set 1.0 with 4 tasks
+20/10/12 19:32:23 WARN TaskSetManager: Stage 1 contains a task of very large size (12132 KB). The maximum recommended task size is 100 KB.
+20/10/12 19:32:23 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 4, localhost, executor driver, partition 0, PROCESS_LOCAL, 12423264 bytes)
+20/10/12 19:32:23 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 5, localhost, executor driver, partition 1, PROCESS_LOCAL, 12559732 bytes)
+20/10/12 19:32:23 INFO TaskSetManager: Starting task 2.0 in stage 1.0 (TID 6, localhost, executor driver, partition 2, PROCESS_LOCAL, 12554592 bytes)
+20/10/12 19:32:23 INFO TaskSetManager: Starting task 3.0 in stage 1.0 (TID 7, localhost, executor driver, partition 3, PROCESS_LOCAL, 12557810 bytes)
+20/10/12 19:32:23 INFO Executor: Running task 0.0 in stage 1.0 (TID 4)
+20/10/12 19:32:23 INFO Executor: Running task 3.0 in stage 1.0 (TID 7)
+20/10/12 19:32:23 INFO Executor: Running task 1.0 in stage 1.0 (TID 5)
+20/10/12 19:32:23 INFO Executor: Running task 2.0 in stage 1.0 (TID 6)
+20/10/12 19:32:25 INFO PythonRunner: Times: total = 2004, boot = -6679, init = 6705, finish = 1978
+20/10/12 19:32:25 INFO Executor: Finished task 1.0 in stage 1.0 (TID 5). 1421 bytes result sent to driver
+20/10/12 19:32:25 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 5) in 2058 ms on localhost (executor driver) (1/4)
+20/10/12 19:32:25 INFO PythonRunner: Times: total = 2034, boot = -6525, init = 6546, finish = 2013
+20/10/12 19:32:25 INFO Executor: Finished task 3.0 in stage 1.0 (TID 7). 1421 bytes result sent to driver
+20/10/12 19:32:25 INFO TaskSetManager: Finished task 3.0 in stage 1.0 (TID 7) in 2095 ms on localhost (executor driver) (2/4)
+20/10/12 19:32:25 INFO PythonRunner: Times: total = 2215, boot = -6658, init = 6713, finish = 2160
+20/10/12 19:32:25 INFO Executor: Finished task 0.0 in stage 1.0 (TID 4). 1421 bytes result sent to driver
+20/10/12 19:32:25 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 4) in 2285 ms on localhost (executor driver) (3/4)
+20/10/12 19:32:25 INFO PythonRunner: Times: total = 2417, boot = -6202, init = 6256, finish = 2363
+20/10/12 19:32:25 INFO Executor: Finished task 2.0 in stage 1.0 (TID 6). 1421 bytes result sent to driver
+20/10/12 19:32:25 INFO TaskSetManager: Finished task 2.0 in stage 1.0 (TID 6) in 2487 ms on localhost (executor driver) (4/4)
+20/10/12 19:32:25 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+20/10/12 19:32:25 INFO DAGScheduler: ResultStage 1 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) finished in 2.516 s
+20/10/12 19:32:25 INFO DAGScheduler: Job 1 finished: count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43, took 2.519617 s
+20/10/12 19:32:33 INFO ContextCleaner: Cleaned accumulator 43
+20/10/12 19:32:33 INFO ContextCleaner: Cleaned accumulator 33
+20/10/12 19:32:33 INFO ContextCleaner: Cleaned accumulator 38
+20/10/12 19:32:33 INFO ContextCleaner: Cleaned accumulator 45
+20/10/12 19:32:33 INFO ContextCleaner: Cleaned accumulator 49
+20/10/12 19:32:33 INFO ContextCleaner: Cleaned accumulator 35
+20/10/12 19:32:33 INFO ContextCleaner: Cleaned accumulator 46
+20/10/12 19:32:33 INFO ContextCleaner: Cleaned accumulator 47
+20/10/12 19:32:33 INFO ContextCleaner: Cleaned accumulator 26
+20/10/12 19:32:33 INFO ContextCleaner: Cleaned accumulator 32
+20/10/12 19:32:33 INFO ContextCleaner: Cleaned accumulator 36
+20/10/12 19:32:33 INFO ContextCleaner: Cleaned accumulator 27
+20/10/12 19:32:33 INFO ContextCleaner: Cleaned accumulator 34
+20/10/12 19:32:33 INFO ContextCleaner: Cleaned accumulator 29
+20/10/12 19:32:33 INFO ContextCleaner: Cleaned accumulator 39
+20/10/12 19:32:33 INFO ContextCleaner: Cleaned accumulator 50
+20/10/12 19:32:33 INFO ContextCleaner: Cleaned accumulator 40
+20/10/12 19:32:33 INFO ContextCleaner: Cleaned accumulator 28
+20/10/12 19:32:33 INFO ContextCleaner: Cleaned accumulator 42
+20/10/12 19:32:33 INFO BlockManagerInfo: Removed broadcast_1_piece0 on spark-master:42553 in memory (size: 4.0 KB, free: 366.1 MB)
+20/10/12 19:32:33 INFO ContextCleaner: Cleaned accumulator 37
+20/10/12 19:32:33 INFO ContextCleaner: Cleaned accumulator 48
+20/10/12 19:32:33 INFO ContextCleaner: Cleaned accumulator 30
+20/10/12 19:32:33 INFO ContextCleaner: Cleaned accumulator 31
+20/10/12 19:32:33 INFO ContextCleaner: Cleaned accumulator 44
+20/10/12 19:32:33 INFO ContextCleaner: Cleaned accumulator 41
+20/10/12 19:32:33 INFO SparkContext: Starting job: count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43
+20/10/12 19:32:33 INFO DAGScheduler: Got job 2 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) with 4 output partitions
+20/10/12 19:32:33 INFO DAGScheduler: Final stage: ResultStage 2 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43)
+20/10/12 19:32:33 INFO DAGScheduler: Parents of final stage: List()
+20/10/12 19:32:33 INFO DAGScheduler: Missing parents: List()
+20/10/12 19:32:33 INFO DAGScheduler: Submitting ResultStage 2 (PythonRDD[5] at count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43), which has no missing parents
+20/10/12 19:32:33 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 6.0 KB, free 366.1 MB)
+20/10/12 19:32:33 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 4.0 KB, free 366.1 MB)
+20/10/12 19:32:33 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on spark-master:42553 (size: 4.0 KB, free: 366.1 MB)
+20/10/12 19:32:33 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1163
+20/10/12 19:32:33 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 2 (PythonRDD[5] at count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+20/10/12 19:32:33 INFO TaskSchedulerImpl: Adding task set 2.0 with 4 tasks
+20/10/12 19:32:33 WARN TaskSetManager: Stage 2 contains a task of very large size (12132 KB). The maximum recommended task size is 100 KB.
+20/10/12 19:32:33 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 8, localhost, executor driver, partition 0, PROCESS_LOCAL, 12423264 bytes)
+20/10/12 19:32:33 INFO TaskSetManager: Starting task 1.0 in stage 2.0 (TID 9, localhost, executor driver, partition 1, PROCESS_LOCAL, 12559732 bytes)
+20/10/12 19:32:33 INFO TaskSetManager: Starting task 2.0 in stage 2.0 (TID 10, localhost, executor driver, partition 2, PROCESS_LOCAL, 12554592 bytes)
+20/10/12 19:32:33 INFO TaskSetManager: Starting task 3.0 in stage 2.0 (TID 11, localhost, executor driver, partition 3, PROCESS_LOCAL, 12557810 bytes)
+20/10/12 19:32:33 INFO Executor: Running task 1.0 in stage 2.0 (TID 9)
+20/10/12 19:32:33 INFO Executor: Running task 0.0 in stage 2.0 (TID 8)
+20/10/12 19:32:33 INFO Executor: Running task 2.0 in stage 2.0 (TID 10)
+20/10/12 19:32:33 INFO Executor: Running task 3.0 in stage 2.0 (TID 11)
+20/10/12 19:32:35 INFO PythonRunner: Times: total = 1863, boot = -8687, init = 8707, finish = 1843
+20/10/12 19:32:35 INFO Executor: Finished task 0.0 in stage 2.0 (TID 8). 1464 bytes result sent to driver
+20/10/12 19:32:35 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 8) in 1932 ms on localhost (executor driver) (1/4)
+20/10/12 19:32:35 INFO PythonRunner: Times: total = 1976, boot = -8478, init = 8503, finish = 1951
+20/10/12 19:32:35 INFO Executor: Finished task 2.0 in stage 2.0 (TID 10). 1421 bytes result sent to driver
+20/10/12 19:32:35 INFO TaskSetManager: Finished task 2.0 in stage 2.0 (TID 10) in 2036 ms on localhost (executor driver) (2/4)
+20/10/12 19:32:36 INFO PythonRunner: Times: total = 2035, boot = -8262, init = 8267, finish = 2030
+20/10/12 19:32:36 INFO Executor: Finished task 3.0 in stage 2.0 (TID 11). 1421 bytes result sent to driver
+20/10/12 19:32:36 INFO TaskSetManager: Finished task 3.0 in stage 2.0 (TID 11) in 2113 ms on localhost (executor driver) (3/4)
+20/10/12 19:32:36 INFO PythonRunner: Times: total = 2286, boot = -8639, init = 8691, finish = 2234
+20/10/12 19:32:36 INFO Executor: Finished task 1.0 in stage 2.0 (TID 9). 1507 bytes result sent to driver
+20/10/12 19:32:36 INFO TaskSetManager: Finished task 1.0 in stage 2.0 (TID 9) in 2351 ms on localhost (executor driver) (4/4)
+20/10/12 19:32:36 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+20/10/12 19:32:36 INFO DAGScheduler: ResultStage 2 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) finished in 2.364 s
+20/10/12 19:32:36 INFO DAGScheduler: Job 2 finished: count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43, took 2.374618 s
+20/10/12 19:32:41 INFO SparkContext: Starting job: count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43
+20/10/12 19:32:41 INFO DAGScheduler: Got job 3 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) with 4 output partitions
+20/10/12 19:32:41 INFO DAGScheduler: Final stage: ResultStage 3 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43)
+20/10/12 19:32:41 INFO DAGScheduler: Parents of final stage: List()
+20/10/12 19:32:41 INFO DAGScheduler: Missing parents: List()
+20/10/12 19:32:41 INFO DAGScheduler: Submitting ResultStage 3 (PythonRDD[7] at count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43), which has no missing parents
+20/10/12 19:32:41 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 6.0 KB, free 366.1 MB)
+20/10/12 19:32:41 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 4.0 KB, free 366.1 MB)
+20/10/12 19:32:41 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on spark-master:42553 (size: 4.0 KB, free: 366.1 MB)
+20/10/12 19:32:41 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1163
+20/10/12 19:32:41 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 3 (PythonRDD[7] at count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+20/10/12 19:32:41 INFO TaskSchedulerImpl: Adding task set 3.0 with 4 tasks
+20/10/12 19:32:42 INFO ContextCleaner: Cleaned accumulator 69
+20/10/12 19:32:42 INFO BlockManagerInfo: Removed broadcast_2_piece0 on spark-master:42553 in memory (size: 4.0 KB, free: 366.1 MB)
+20/10/12 19:32:42 WARN TaskSetManager: Stage 3 contains a task of very large size (12132 KB). The maximum recommended task size is 100 KB.
+20/10/12 19:32:42 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 12, localhost, executor driver, partition 0, PROCESS_LOCAL, 12423264 bytes)
+20/10/12 19:32:42 INFO ContextCleaner: Cleaned accumulator 61
+20/10/12 19:32:42 INFO ContextCleaner: Cleaned accumulator 60
+20/10/12 19:32:42 INFO ContextCleaner: Cleaned accumulator 74
+20/10/12 19:32:42 INFO ContextCleaner: Cleaned accumulator 53
+20/10/12 19:32:42 INFO ContextCleaner: Cleaned accumulator 75
+20/10/12 19:32:42 INFO ContextCleaner: Cleaned accumulator 66
+20/10/12 19:32:42 INFO ContextCleaner: Cleaned accumulator 58
+20/10/12 19:32:42 INFO ContextCleaner: Cleaned accumulator 68
+20/10/12 19:32:42 INFO ContextCleaner: Cleaned accumulator 52
+20/10/12 19:32:42 INFO ContextCleaner: Cleaned accumulator 67
+20/10/12 19:32:42 INFO ContextCleaner: Cleaned accumulator 70
+20/10/12 19:32:42 INFO ContextCleaner: Cleaned accumulator 63
+20/10/12 19:32:42 INFO ContextCleaner: Cleaned accumulator 55
+20/10/12 19:32:42 INFO ContextCleaner: Cleaned accumulator 57
+20/10/12 19:32:42 INFO ContextCleaner: Cleaned accumulator 73
+20/10/12 19:32:42 INFO ContextCleaner: Cleaned accumulator 64
+20/10/12 19:32:42 INFO ContextCleaner: Cleaned accumulator 51
+20/10/12 19:32:42 INFO ContextCleaner: Cleaned accumulator 54
+20/10/12 19:32:42 INFO ContextCleaner: Cleaned accumulator 72
+20/10/12 19:32:42 INFO ContextCleaner: Cleaned accumulator 65
+20/10/12 19:32:42 INFO ContextCleaner: Cleaned accumulator 71
+20/10/12 19:32:42 INFO ContextCleaner: Cleaned accumulator 62
+20/10/12 19:32:42 INFO ContextCleaner: Cleaned accumulator 56
+20/10/12 19:32:42 INFO ContextCleaner: Cleaned accumulator 59
+20/10/12 19:32:42 INFO TaskSetManager: Starting task 1.0 in stage 3.0 (TID 13, localhost, executor driver, partition 1, PROCESS_LOCAL, 12559732 bytes)
+20/10/12 19:32:42 INFO TaskSetManager: Starting task 2.0 in stage 3.0 (TID 14, localhost, executor driver, partition 2, PROCESS_LOCAL, 12554592 bytes)
+20/10/12 19:32:42 INFO TaskSetManager: Starting task 3.0 in stage 3.0 (TID 15, localhost, executor driver, partition 3, PROCESS_LOCAL, 12557810 bytes)
+20/10/12 19:32:42 INFO Executor: Running task 1.0 in stage 3.0 (TID 13)
+20/10/12 19:32:42 INFO Executor: Running task 3.0 in stage 3.0 (TID 15)
+20/10/12 19:32:42 INFO Executor: Running task 0.0 in stage 3.0 (TID 12)
+20/10/12 19:32:42 INFO Executor: Running task 2.0 in stage 3.0 (TID 14)
+20/10/12 19:32:44 INFO PythonRunner: Times: total = 2194, boot = -5852, init = 5869, finish = 2177
+20/10/12 19:32:44 INFO Executor: Finished task 2.0 in stage 3.0 (TID 14). 1421 bytes result sent to driver
+20/10/12 19:32:44 INFO TaskSetManager: Finished task 2.0 in stage 3.0 (TID 14) in 2264 ms on localhost (executor driver) (1/4)
+20/10/12 19:32:44 INFO PythonRunner: Times: total = 2310, boot = -6065, init = 6080, finish = 2295
+20/10/12 19:32:44 INFO Executor: Finished task 0.0 in stage 3.0 (TID 12). 1421 bytes result sent to driver
+20/10/12 19:32:44 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 12) in 2636 ms on localhost (executor driver) (2/4)
+20/10/12 19:32:44 INFO PythonRunner: Times: total = 2372, boot = -6248, init = 6254, finish = 2366
+20/10/12 19:32:44 INFO Executor: Finished task 1.0 in stage 3.0 (TID 13). 1464 bytes result sent to driver
+20/10/12 19:32:44 INFO TaskSetManager: Finished task 1.0 in stage 3.0 (TID 13) in 2430 ms on localhost (executor driver) (3/4)
+20/10/12 19:32:44 INFO PythonRunner: Times: total = 2429, boot = -6136, init = 6140, finish = 2425
+20/10/12 19:32:44 INFO Executor: Finished task 3.0 in stage 3.0 (TID 15). 1507 bytes result sent to driver
+20/10/12 19:32:44 INFO TaskSetManager: Finished task 3.0 in stage 3.0 (TID 15) in 2468 ms on localhost (executor driver) (4/4)
+20/10/12 19:32:44 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+20/10/12 19:32:44 INFO DAGScheduler: ResultStage 3 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) finished in 2.794 s
+20/10/12 19:32:44 INFO DAGScheduler: Job 3 finished: count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43, took 2.813097 s
+20/10/12 19:32:50 INFO SparkContext: Starting job: count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43
+20/10/12 19:32:50 INFO DAGScheduler: Got job 4 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) with 4 output partitions
+20/10/12 19:32:50 INFO DAGScheduler: Final stage: ResultStage 4 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43)
+20/10/12 19:32:50 INFO DAGScheduler: Parents of final stage: List()
+20/10/12 19:32:50 INFO DAGScheduler: Missing parents: List()
+20/10/12 19:32:50 INFO DAGScheduler: Submitting ResultStage 4 (PythonRDD[9] at count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43), which has no missing parents
+20/10/12 19:32:50 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 6.0 KB, free 366.1 MB)
+20/10/12 19:32:50 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 4.0 KB, free 366.1 MB)
+20/10/12 19:32:50 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on spark-master:42553 (size: 4.0 KB, free: 366.1 MB)
+20/10/12 19:32:50 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1163
+20/10/12 19:32:50 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 4 (PythonRDD[9] at count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+20/10/12 19:32:50 INFO TaskSchedulerImpl: Adding task set 4.0 with 4 tasks
+20/10/12 19:32:50 WARN TaskSetManager: Stage 4 contains a task of very large size (12132 KB). The maximum recommended task size is 100 KB.
+20/10/12 19:32:50 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 16, localhost, executor driver, partition 0, PROCESS_LOCAL, 12423264 bytes)
+20/10/12 19:32:50 INFO ContextCleaner: Cleaned accumulator 95
+20/10/12 19:32:50 INFO ContextCleaner: Cleaned accumulator 87
+20/10/12 19:32:50 INFO ContextCleaner: Cleaned accumulator 86
+20/10/12 19:32:50 INFO ContextCleaner: Cleaned accumulator 84
+20/10/12 19:32:50 INFO ContextCleaner: Cleaned accumulator 80
+20/10/12 19:32:50 INFO ContextCleaner: Cleaned accumulator 82
+20/10/12 19:32:50 INFO ContextCleaner: Cleaned accumulator 76
+20/10/12 19:32:50 INFO ContextCleaner: Cleaned accumulator 78
+20/10/12 19:32:50 INFO ContextCleaner: Cleaned accumulator 93
+20/10/12 19:32:50 INFO ContextCleaner: Cleaned accumulator 91
+20/10/12 19:32:50 INFO ContextCleaner: Cleaned accumulator 77
+20/10/12 19:32:50 INFO ContextCleaner: Cleaned accumulator 88
+20/10/12 19:32:50 INFO ContextCleaner: Cleaned accumulator 81
+20/10/12 19:32:50 INFO ContextCleaner: Cleaned accumulator 83
+20/10/12 19:32:50 INFO ContextCleaner: Cleaned accumulator 89
+20/10/12 19:32:50 INFO ContextCleaner: Cleaned accumulator 94
+20/10/12 19:32:50 INFO ContextCleaner: Cleaned accumulator 99
+20/10/12 19:32:50 INFO ContextCleaner: Cleaned accumulator 96
+20/10/12 19:32:50 INFO ContextCleaner: Cleaned accumulator 85
+20/10/12 19:32:50 INFO ContextCleaner: Cleaned accumulator 92
+20/10/12 19:32:50 INFO ContextCleaner: Cleaned accumulator 90
+20/10/12 19:32:50 INFO BlockManagerInfo: Removed broadcast_3_piece0 on spark-master:42553 in memory (size: 4.0 KB, free: 366.1 MB)
+20/10/12 19:32:50 INFO ContextCleaner: Cleaned accumulator 97
+20/10/12 19:32:50 INFO ContextCleaner: Cleaned accumulator 98
+20/10/12 19:32:50 INFO ContextCleaner: Cleaned accumulator 79
+20/10/12 19:32:50 INFO ContextCleaner: Cleaned accumulator 100
+20/10/12 19:32:50 INFO TaskSetManager: Starting task 1.0 in stage 4.0 (TID 17, localhost, executor driver, partition 1, PROCESS_LOCAL, 12559732 bytes)
+20/10/12 19:32:50 INFO TaskSetManager: Starting task 2.0 in stage 4.0 (TID 18, localhost, executor driver, partition 2, PROCESS_LOCAL, 12554592 bytes)
+20/10/12 19:32:50 INFO TaskSetManager: Starting task 3.0 in stage 4.0 (TID 19, localhost, executor driver, partition 3, PROCESS_LOCAL, 12557810 bytes)
+20/10/12 19:32:50 INFO Executor: Running task 1.0 in stage 4.0 (TID 17)
+20/10/12 19:32:50 INFO Executor: Running task 0.0 in stage 4.0 (TID 16)
+20/10/12 19:32:50 INFO Executor: Running task 3.0 in stage 4.0 (TID 19)
+20/10/12 19:32:50 INFO Executor: Running task 2.0 in stage 4.0 (TID 18)
+20/10/12 19:32:52 INFO PythonRunner: Times: total = 1935, boot = -6588, init = 6620, finish = 1903
+20/10/12 19:32:52 INFO Executor: Finished task 3.0 in stage 4.0 (TID 19). 1421 bytes result sent to driver
+20/10/12 19:32:52 INFO TaskSetManager: Finished task 3.0 in stage 4.0 (TID 19) in 1962 ms on localhost (executor driver) (1/4)
+20/10/12 19:32:53 INFO PythonRunner: Times: total = 2068, boot = -6478, init = 6502, finish = 2044
+20/10/12 19:32:53 INFO Executor: Finished task 2.0 in stage 4.0 (TID 18). 1421 bytes result sent to driver
+20/10/12 19:32:53 INFO TaskSetManager: Finished task 2.0 in stage 4.0 (TID 18) in 2124 ms on localhost (executor driver) (2/4)
+20/10/12 19:32:53 INFO PythonRunner: Times: total = 2116, boot = -6529, init = 6533, finish = 2112
+20/10/12 19:32:53 INFO Executor: Finished task 1.0 in stage 4.0 (TID 17). 1421 bytes result sent to driver
+20/10/12 19:32:53 INFO TaskSetManager: Finished task 1.0 in stage 4.0 (TID 17) in 2163 ms on localhost (executor driver) (3/4)
+20/10/12 19:32:53 INFO PythonRunner: Times: total = 2313, boot = -6674, init = 6681, finish = 2306
+20/10/12 19:32:53 INFO Executor: Finished task 0.0 in stage 4.0 (TID 16). 1421 bytes result sent to driver
+20/10/12 19:32:53 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 16) in 2437 ms on localhost (executor driver) (4/4)
+20/10/12 19:32:53 INFO TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+20/10/12 19:32:53 INFO DAGScheduler: ResultStage 4 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) finished in 2.444 s
+20/10/12 19:32:53 INFO DAGScheduler: Job 4 finished: count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43, took 2.449372 s
+20/10/12 19:32:59 INFO SparkContext: Starting job: count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43
+20/10/12 19:32:59 INFO DAGScheduler: Got job 5 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) with 4 output partitions
+20/10/12 19:32:59 INFO DAGScheduler: Final stage: ResultStage 5 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43)
+20/10/12 19:32:59 INFO DAGScheduler: Parents of final stage: List()
+20/10/12 19:32:59 INFO DAGScheduler: Missing parents: List()
+20/10/12 19:32:59 INFO DAGScheduler: Submitting ResultStage 5 (PythonRDD[11] at count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43), which has no missing parents
+20/10/12 19:32:59 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 6.0 KB, free 366.1 MB)
+20/10/12 19:32:59 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 4.0 KB, free 366.1 MB)
+20/10/12 19:32:59 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on spark-master:42553 (size: 4.0 KB, free: 366.1 MB)
+20/10/12 19:32:59 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1163
+20/10/12 19:32:59 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 5 (PythonRDD[11] at count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+20/10/12 19:32:59 INFO TaskSchedulerImpl: Adding task set 5.0 with 4 tasks
+20/10/12 19:32:59 WARN TaskSetManager: Stage 5 contains a task of very large size (12132 KB). The maximum recommended task size is 100 KB.
+20/10/12 19:32:59 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 20, localhost, executor driver, partition 0, PROCESS_LOCAL, 12423264 bytes)
+20/10/12 19:32:59 INFO TaskSetManager: Starting task 1.0 in stage 5.0 (TID 21, localhost, executor driver, partition 1, PROCESS_LOCAL, 12559732 bytes)
+20/10/12 19:32:59 INFO TaskSetManager: Starting task 2.0 in stage 5.0 (TID 22, localhost, executor driver, partition 2, PROCESS_LOCAL, 12554592 bytes)
+20/10/12 19:32:59 INFO TaskSetManager: Starting task 3.0 in stage 5.0 (TID 23, localhost, executor driver, partition 3, PROCESS_LOCAL, 12557810 bytes)
+20/10/12 19:32:59 INFO ContextCleaner: Cleaned accumulator 113
+20/10/12 19:32:59 INFO ContextCleaner: Cleaned accumulator 105
+20/10/12 19:32:59 INFO ContextCleaner: Cleaned accumulator 114
+20/10/12 19:32:59 INFO ContextCleaner: Cleaned accumulator 110
+20/10/12 19:32:59 INFO ContextCleaner: Cleaned accumulator 122
+20/10/12 19:32:59 INFO ContextCleaner: Cleaned accumulator 124
+20/10/12 19:32:59 INFO ContextCleaner: Cleaned accumulator 115
+20/10/12 19:32:59 INFO ContextCleaner: Cleaned accumulator 118
+20/10/12 19:32:59 INFO ContextCleaner: Cleaned accumulator 107
+20/10/12 19:32:59 INFO Executor: Running task 1.0 in stage 5.0 (TID 21)
+20/10/12 19:32:59 INFO Executor: Running task 0.0 in stage 5.0 (TID 20)
+20/10/12 19:32:59 INFO Executor: Running task 3.0 in stage 5.0 (TID 23)
+20/10/12 19:32:59 INFO Executor: Running task 2.0 in stage 5.0 (TID 22)
+20/10/12 19:32:59 INFO BlockManagerInfo: Removed broadcast_4_piece0 on spark-master:42553 in memory (size: 4.0 KB, free: 366.1 MB)
+20/10/12 19:32:59 INFO ContextCleaner: Cleaned accumulator 103
+20/10/12 19:32:59 INFO ContextCleaner: Cleaned accumulator 116
+20/10/12 19:32:59 INFO ContextCleaner: Cleaned accumulator 101
+20/10/12 19:32:59 INFO ContextCleaner: Cleaned accumulator 102
+20/10/12 19:32:59 INFO ContextCleaner: Cleaned accumulator 121
+20/10/12 19:32:59 INFO ContextCleaner: Cleaned accumulator 117
+20/10/12 19:32:59 INFO ContextCleaner: Cleaned accumulator 106
+20/10/12 19:32:59 INFO ContextCleaner: Cleaned accumulator 125
+20/10/12 19:32:59 INFO ContextCleaner: Cleaned accumulator 112
+20/10/12 19:32:59 INFO ContextCleaner: Cleaned accumulator 123
+20/10/12 19:32:59 INFO ContextCleaner: Cleaned accumulator 109
+20/10/12 19:32:59 INFO ContextCleaner: Cleaned accumulator 104
+20/10/12 19:32:59 INFO ContextCleaner: Cleaned accumulator 111
+20/10/12 19:32:59 INFO ContextCleaner: Cleaned accumulator 119
+20/10/12 19:32:59 INFO ContextCleaner: Cleaned accumulator 120
+20/10/12 19:32:59 INFO ContextCleaner: Cleaned accumulator 108
+20/10/12 19:33:01 INFO PythonRunner: Times: total = 1988, boot = -6102, init = 6129, finish = 1961
+20/10/12 19:33:01 INFO Executor: Finished task 2.0 in stage 5.0 (TID 22). 1421 bytes result sent to driver
+20/10/12 19:33:01 INFO TaskSetManager: Finished task 2.0 in stage 5.0 (TID 22) in 2130 ms on localhost (executor driver) (1/4)
+20/10/12 19:33:01 INFO PythonRunner: Times: total = 2206, boot = -5887, init = 5904, finish = 2189
+20/10/12 19:33:01 INFO Executor: Finished task 1.0 in stage 5.0 (TID 21). 1421 bytes result sent to driver
+20/10/12 19:33:01 INFO TaskSetManager: Finished task 1.0 in stage 5.0 (TID 21) in 2355 ms on localhost (executor driver) (2/4)
+20/10/12 19:33:01 INFO PythonRunner: Times: total = 2245, boot = -6077, init = 6094, finish = 2228
+20/10/12 19:33:01 INFO Executor: Finished task 3.0 in stage 5.0 (TID 23). 1421 bytes result sent to driver
+20/10/12 19:33:01 INFO TaskSetManager: Finished task 3.0 in stage 5.0 (TID 23) in 2381 ms on localhost (executor driver) (3/4)
+20/10/12 19:33:01 INFO PythonRunner: Times: total = 2338, boot = -6240, init = 6261, finish = 2317
+20/10/12 19:33:01 INFO Executor: Finished task 0.0 in stage 5.0 (TID 20). 1421 bytes result sent to driver
+20/10/12 19:33:01 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 20) in 2494 ms on localhost (executor driver) (4/4)
+20/10/12 19:33:01 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+20/10/12 19:33:01 INFO DAGScheduler: ResultStage 5 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) finished in 2.501 s
+20/10/12 19:33:01 INFO DAGScheduler: Job 5 finished: count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43, took 2.511226 s
+20/10/12 19:33:07 INFO SparkContext: Starting job: count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43
+20/10/12 19:33:07 INFO DAGScheduler: Got job 6 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) with 4 output partitions
+20/10/12 19:33:07 INFO DAGScheduler: Final stage: ResultStage 6 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43)
+20/10/12 19:33:07 INFO DAGScheduler: Parents of final stage: List()
+20/10/12 19:33:07 INFO DAGScheduler: Missing parents: List()
+20/10/12 19:33:07 INFO DAGScheduler: Submitting ResultStage 6 (PythonRDD[13] at count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43), which has no missing parents
+20/10/12 19:33:07 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 6.0 KB, free 366.1 MB)
+20/10/12 19:33:07 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 4.0 KB, free 366.1 MB)
+20/10/12 19:33:07 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on spark-master:42553 (size: 4.0 KB, free: 366.1 MB)
+20/10/12 19:33:07 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1163
+20/10/12 19:33:07 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 6 (PythonRDD[13] at count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+20/10/12 19:33:07 INFO TaskSchedulerImpl: Adding task set 6.0 with 4 tasks
+20/10/12 19:33:07 WARN TaskSetManager: Stage 6 contains a task of very large size (12132 KB). The maximum recommended task size is 100 KB.
+20/10/12 19:33:07 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 24, localhost, executor driver, partition 0, PROCESS_LOCAL, 12423264 bytes)
+20/10/12 19:33:07 INFO TaskSetManager: Starting task 1.0 in stage 6.0 (TID 25, localhost, executor driver, partition 1, PROCESS_LOCAL, 12559732 bytes)
+20/10/12 19:33:07 INFO TaskSetManager: Starting task 2.0 in stage 6.0 (TID 26, localhost, executor driver, partition 2, PROCESS_LOCAL, 12554592 bytes)
+20/10/12 19:33:07 INFO ContextCleaner: Cleaned accumulator 134
+20/10/12 19:33:07 INFO ContextCleaner: Cleaned accumulator 131
+20/10/12 19:33:07 INFO ContextCleaner: Cleaned accumulator 150
+20/10/12 19:33:07 INFO ContextCleaner: Cleaned accumulator 138
+20/10/12 19:33:07 INFO ContextCleaner: Cleaned accumulator 136
+20/10/12 19:33:07 INFO ContextCleaner: Cleaned accumulator 133
+20/10/12 19:33:07 INFO ContextCleaner: Cleaned accumulator 139
+20/10/12 19:33:07 INFO ContextCleaner: Cleaned accumulator 142
+20/10/12 19:33:07 INFO ContextCleaner: Cleaned accumulator 132
+20/10/12 19:33:07 INFO ContextCleaner: Cleaned accumulator 126
+20/10/12 19:33:07 INFO ContextCleaner: Cleaned accumulator 146
+20/10/12 19:33:07 INFO ContextCleaner: Cleaned accumulator 140
+20/10/12 19:33:07 INFO ContextCleaner: Cleaned accumulator 135
+20/10/12 19:33:07 INFO ContextCleaner: Cleaned accumulator 141
+20/10/12 19:33:07 INFO ContextCleaner: Cleaned accumulator 127
+20/10/12 19:33:07 INFO ContextCleaner: Cleaned accumulator 147
+20/10/12 19:33:07 INFO ContextCleaner: Cleaned accumulator 128
+20/10/12 19:33:07 INFO ContextCleaner: Cleaned accumulator 145
+20/10/12 19:33:07 INFO ContextCleaner: Cleaned accumulator 144
+20/10/12 19:33:07 INFO ContextCleaner: Cleaned accumulator 143
+20/10/12 19:33:07 INFO ContextCleaner: Cleaned accumulator 149
+20/10/12 19:33:07 INFO ContextCleaner: Cleaned accumulator 129
+20/10/12 19:33:07 INFO BlockManagerInfo: Removed broadcast_5_piece0 on spark-master:42553 in memory (size: 4.0 KB, free: 366.1 MB)
+20/10/12 19:33:07 INFO ContextCleaner: Cleaned accumulator 130
+20/10/12 19:33:07 INFO ContextCleaner: Cleaned accumulator 148
+20/10/12 19:33:07 INFO ContextCleaner: Cleaned accumulator 137
+20/10/12 19:33:07 INFO TaskSetManager: Starting task 3.0 in stage 6.0 (TID 27, localhost, executor driver, partition 3, PROCESS_LOCAL, 12557810 bytes)
+20/10/12 19:33:07 INFO Executor: Running task 1.0 in stage 6.0 (TID 25)
+20/10/12 19:33:07 INFO Executor: Running task 0.0 in stage 6.0 (TID 24)
+20/10/12 19:33:07 INFO Executor: Running task 2.0 in stage 6.0 (TID 26)
+20/10/12 19:33:07 INFO Executor: Running task 3.0 in stage 6.0 (TID 27)
+20/10/12 19:33:09 INFO PythonRunner: Times: total = 2198, boot = -5751, init = 5760, finish = 2189
+20/10/12 19:33:09 INFO Executor: Finished task 2.0 in stage 6.0 (TID 26). 1421 bytes result sent to driver
+20/10/12 19:33:09 INFO TaskSetManager: Finished task 2.0 in stage 6.0 (TID 26) in 2309 ms on localhost (executor driver) (1/4)
+20/10/12 19:33:09 INFO PythonRunner: Times: total = 2334, boot = -5786, init = 5813, finish = 2307
+20/10/12 19:33:09 INFO Executor: Finished task 0.0 in stage 6.0 (TID 24). 1421 bytes result sent to driver
+20/10/12 19:33:09 INFO TaskSetManager: Finished task 0.0 in stage 6.0 (TID 24) in 2460 ms on localhost (executor driver) (2/4)
+20/10/12 19:33:09 INFO PythonRunner: Times: total = 2356, boot = -5664, init = 5667, finish = 2353
+20/10/12 19:33:09 INFO Executor: Finished task 3.0 in stage 6.0 (TID 27). 1421 bytes result sent to driver
+20/10/12 19:33:09 INFO TaskSetManager: Finished task 3.0 in stage 6.0 (TID 27) in 2453 ms on localhost (executor driver) (3/4)
+20/10/12 19:33:09 INFO PythonRunner: Times: total = 2377, boot = -5992, init = 6007, finish = 2362
+20/10/12 19:33:09 INFO Executor: Finished task 1.0 in stage 6.0 (TID 25). 1421 bytes result sent to driver
+20/10/12 19:33:09 INFO TaskSetManager: Finished task 1.0 in stage 6.0 (TID 25) in 2493 ms on localhost (executor driver) (4/4)
+20/10/12 19:33:09 INFO TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool 
+20/10/12 19:33:09 INFO DAGScheduler: ResultStage 6 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) finished in 2.508 s
+20/10/12 19:33:09 INFO DAGScheduler: Job 6 finished: count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43, took 2.510926 s
+20/10/12 19:33:16 INFO SparkContext: Starting job: count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43
+20/10/12 19:33:16 INFO DAGScheduler: Got job 7 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) with 4 output partitions
+20/10/12 19:33:16 INFO DAGScheduler: Final stage: ResultStage 7 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43)
+20/10/12 19:33:16 INFO DAGScheduler: Parents of final stage: List()
+20/10/12 19:33:16 INFO DAGScheduler: Missing parents: List()
+20/10/12 19:33:16 INFO DAGScheduler: Submitting ResultStage 7 (PythonRDD[15] at count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43), which has no missing parents
+20/10/12 19:33:16 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 6.0 KB, free 366.1 MB)
+20/10/12 19:33:16 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 4.0 KB, free 366.1 MB)
+20/10/12 19:33:16 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on spark-master:42553 (size: 4.0 KB, free: 366.1 MB)
+20/10/12 19:33:16 INFO SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:1163
+20/10/12 19:33:16 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 7 (PythonRDD[15] at count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+20/10/12 19:33:16 INFO TaskSchedulerImpl: Adding task set 7.0 with 4 tasks
+20/10/12 19:33:16 WARN TaskSetManager: Stage 7 contains a task of very large size (12132 KB). The maximum recommended task size is 100 KB.
+20/10/12 19:33:16 INFO TaskSetManager: Starting task 0.0 in stage 7.0 (TID 28, localhost, executor driver, partition 0, PROCESS_LOCAL, 12423264 bytes)
+20/10/12 19:33:16 INFO TaskSetManager: Starting task 1.0 in stage 7.0 (TID 29, localhost, executor driver, partition 1, PROCESS_LOCAL, 12559732 bytes)
+20/10/12 19:33:16 INFO TaskSetManager: Starting task 2.0 in stage 7.0 (TID 30, localhost, executor driver, partition 2, PROCESS_LOCAL, 12554592 bytes)
+20/10/12 19:33:16 INFO ContextCleaner: Cleaned accumulator 163
+20/10/12 19:33:16 INFO ContextCleaner: Cleaned accumulator 173
+20/10/12 19:33:16 INFO ContextCleaner: Cleaned accumulator 159
+20/10/12 19:33:16 INFO ContextCleaner: Cleaned accumulator 167
+20/10/12 19:33:16 INFO ContextCleaner: Cleaned accumulator 155
+20/10/12 19:33:16 INFO ContextCleaner: Cleaned accumulator 151
+20/10/12 19:33:16 INFO ContextCleaner: Cleaned accumulator 166
+20/10/12 19:33:16 INFO ContextCleaner: Cleaned accumulator 169
+20/10/12 19:33:16 INFO ContextCleaner: Cleaned accumulator 171
+20/10/12 19:33:16 INFO ContextCleaner: Cleaned accumulator 168
+20/10/12 19:33:16 INFO ContextCleaner: Cleaned accumulator 175
+20/10/12 19:33:16 INFO ContextCleaner: Cleaned accumulator 164
+20/10/12 19:33:16 INFO ContextCleaner: Cleaned accumulator 154
+20/10/12 19:33:16 INFO ContextCleaner: Cleaned accumulator 172
+20/10/12 19:33:16 INFO ContextCleaner: Cleaned accumulator 160
+20/10/12 19:33:16 INFO ContextCleaner: Cleaned accumulator 157
+20/10/12 19:33:16 INFO BlockManagerInfo: Removed broadcast_6_piece0 on spark-master:42553 in memory (size: 4.0 KB, free: 366.1 MB)
+20/10/12 19:33:16 INFO ContextCleaner: Cleaned accumulator 170
+20/10/12 19:33:16 INFO ContextCleaner: Cleaned accumulator 174
+20/10/12 19:33:16 INFO ContextCleaner: Cleaned accumulator 156
+20/10/12 19:33:16 INFO ContextCleaner: Cleaned accumulator 165
+20/10/12 19:33:16 INFO ContextCleaner: Cleaned accumulator 152
+20/10/12 19:33:16 INFO ContextCleaner: Cleaned accumulator 158
+20/10/12 19:33:16 INFO ContextCleaner: Cleaned accumulator 161
+20/10/12 19:33:16 INFO ContextCleaner: Cleaned accumulator 153
+20/10/12 19:33:16 INFO ContextCleaner: Cleaned accumulator 162
+20/10/12 19:33:16 INFO TaskSetManager: Starting task 3.0 in stage 7.0 (TID 31, localhost, executor driver, partition 3, PROCESS_LOCAL, 12557810 bytes)
+20/10/12 19:33:16 INFO Executor: Running task 0.0 in stage 7.0 (TID 28)
+20/10/12 19:33:16 INFO Executor: Running task 2.0 in stage 7.0 (TID 30)
+20/10/12 19:33:16 INFO Executor: Running task 3.0 in stage 7.0 (TID 31)
+20/10/12 19:33:16 INFO Executor: Running task 1.0 in stage 7.0 (TID 29)
+20/10/12 19:33:18 INFO PythonRunner: Times: total = 2101, boot = -6725, init = 6726, finish = 2100
+20/10/12 19:33:18 INFO Executor: Finished task 2.0 in stage 7.0 (TID 30). 1421 bytes result sent to driver
+20/10/12 19:33:18 INFO TaskSetManager: Finished task 2.0 in stage 7.0 (TID 30) in 2238 ms on localhost (executor driver) (1/4)
+20/10/12 19:33:18 INFO PythonRunner: Times: total = 2152, boot = -6709, init = 6710, finish = 2151
+20/10/12 19:33:18 INFO Executor: Finished task 0.0 in stage 7.0 (TID 28). 1421 bytes result sent to driver
+20/10/12 19:33:18 INFO TaskSetManager: Finished task 0.0 in stage 7.0 (TID 28) in 2320 ms on localhost (executor driver) (2/4)
+20/10/12 19:33:18 INFO PythonRunner: Times: total = 2380, boot = -6697, init = 6719, finish = 2358
+20/10/12 19:33:18 INFO Executor: Finished task 1.0 in stage 7.0 (TID 29). 1421 bytes result sent to driver
+20/10/12 19:33:18 INFO TaskSetManager: Finished task 1.0 in stage 7.0 (TID 29) in 2541 ms on localhost (executor driver) (3/4)
+20/10/12 19:33:18 INFO PythonRunner: Times: total = 2522, boot = -6833, init = 6842, finish = 2513
+20/10/12 19:33:18 INFO Executor: Finished task 3.0 in stage 7.0 (TID 31). 1421 bytes result sent to driver
+20/10/12 19:33:18 INFO TaskSetManager: Finished task 3.0 in stage 7.0 (TID 31) in 2543 ms on localhost (executor driver) (4/4)
+20/10/12 19:33:18 INFO TaskSchedulerImpl: Removed TaskSet 7.0, whose tasks have all completed, from pool 
+20/10/12 19:33:18 INFO DAGScheduler: ResultStage 7 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) finished in 2.673 s
+20/10/12 19:33:18 INFO DAGScheduler: Job 7 finished: count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43, took 2.674814 s
+20/10/12 19:33:25 INFO SparkContext: Starting job: count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43
+20/10/12 19:33:25 INFO DAGScheduler: Got job 8 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) with 4 output partitions
+20/10/12 19:33:25 INFO DAGScheduler: Final stage: ResultStage 8 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43)
+20/10/12 19:33:25 INFO DAGScheduler: Parents of final stage: List()
+20/10/12 19:33:25 INFO DAGScheduler: Missing parents: List()
+20/10/12 19:33:25 INFO DAGScheduler: Submitting ResultStage 8 (PythonRDD[17] at count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43), which has no missing parents
+20/10/12 19:33:25 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 6.0 KB, free 366.1 MB)
+20/10/12 19:33:25 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 4.0 KB, free 366.1 MB)
+20/10/12 19:33:25 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on spark-master:42553 (size: 4.0 KB, free: 366.1 MB)
+20/10/12 19:33:25 INFO SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:1163
+20/10/12 19:33:25 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 8 (PythonRDD[17] at count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+20/10/12 19:33:25 INFO TaskSchedulerImpl: Adding task set 8.0 with 4 tasks
+20/10/12 19:33:25 WARN TaskSetManager: Stage 8 contains a task of very large size (12132 KB). The maximum recommended task size is 100 KB.
+20/10/12 19:33:25 INFO TaskSetManager: Starting task 0.0 in stage 8.0 (TID 32, localhost, executor driver, partition 0, PROCESS_LOCAL, 12423264 bytes)
+20/10/12 19:33:25 INFO TaskSetManager: Starting task 1.0 in stage 8.0 (TID 33, localhost, executor driver, partition 1, PROCESS_LOCAL, 12559732 bytes)
+20/10/12 19:33:25 INFO ContextCleaner: Cleaned accumulator 194
+20/10/12 19:33:25 INFO ContextCleaner: Cleaned accumulator 186
+20/10/12 19:33:25 INFO ContextCleaner: Cleaned accumulator 182
+20/10/12 19:33:25 INFO ContextCleaner: Cleaned accumulator 196
+20/10/12 19:33:25 INFO ContextCleaner: Cleaned accumulator 192
+20/10/12 19:33:25 INFO ContextCleaner: Cleaned accumulator 178
+20/10/12 19:33:25 INFO TaskSetManager: Starting task 2.0 in stage 8.0 (TID 34, localhost, executor driver, partition 2, PROCESS_LOCAL, 12554592 bytes)
+20/10/12 19:33:25 INFO TaskSetManager: Starting task 3.0 in stage 8.0 (TID 35, localhost, executor driver, partition 3, PROCESS_LOCAL, 12557810 bytes)
+20/10/12 19:33:25 INFO Executor: Running task 2.0 in stage 8.0 (TID 34)
+20/10/12 19:33:25 INFO Executor: Running task 1.0 in stage 8.0 (TID 33)
+20/10/12 19:33:25 INFO Executor: Running task 0.0 in stage 8.0 (TID 32)
+20/10/12 19:33:25 INFO BlockManagerInfo: Removed broadcast_7_piece0 on spark-master:42553 in memory (size: 4.0 KB, free: 366.1 MB)
+20/10/12 19:33:25 INFO Executor: Running task 3.0 in stage 8.0 (TID 35)
+20/10/12 19:33:25 INFO ContextCleaner: Cleaned accumulator 176
+20/10/12 19:33:25 INFO ContextCleaner: Cleaned accumulator 181
+20/10/12 19:33:25 INFO ContextCleaner: Cleaned accumulator 189
+20/10/12 19:33:25 INFO ContextCleaner: Cleaned accumulator 187
+20/10/12 19:33:25 INFO ContextCleaner: Cleaned accumulator 193
+20/10/12 19:33:25 INFO ContextCleaner: Cleaned accumulator 195
+20/10/12 19:33:25 INFO ContextCleaner: Cleaned accumulator 183
+20/10/12 19:33:25 INFO ContextCleaner: Cleaned accumulator 185
+20/10/12 19:33:25 INFO ContextCleaner: Cleaned accumulator 199
+20/10/12 19:33:25 INFO ContextCleaner: Cleaned accumulator 177
+20/10/12 19:33:25 INFO ContextCleaner: Cleaned accumulator 180
+20/10/12 19:33:25 INFO ContextCleaner: Cleaned accumulator 188
+20/10/12 19:33:25 INFO ContextCleaner: Cleaned accumulator 179
+20/10/12 19:33:25 INFO ContextCleaner: Cleaned accumulator 197
+20/10/12 19:33:25 INFO ContextCleaner: Cleaned accumulator 198
+20/10/12 19:33:25 INFO ContextCleaner: Cleaned accumulator 184
+20/10/12 19:33:25 INFO ContextCleaner: Cleaned accumulator 200
+20/10/12 19:33:25 INFO ContextCleaner: Cleaned accumulator 191
+20/10/12 19:33:25 INFO ContextCleaner: Cleaned accumulator 190
+20/10/12 19:33:27 INFO PythonRunner: Times: total = 2473, boot = -6895, init = 6921, finish = 2447
+20/10/12 19:33:27 INFO Executor: Finished task 2.0 in stage 8.0 (TID 34). 1421 bytes result sent to driver
+20/10/12 19:33:27 INFO TaskSetManager: Finished task 2.0 in stage 8.0 (TID 34) in 2590 ms on localhost (executor driver) (1/4)
+20/10/12 19:33:27 INFO PythonRunner: Times: total = 2503, boot = -6830, init = 6857, finish = 2476
+20/10/12 19:33:27 INFO Executor: Finished task 1.0 in stage 8.0 (TID 33). 1421 bytes result sent to driver
+20/10/12 19:33:27 INFO TaskSetManager: Finished task 1.0 in stage 8.0 (TID 33) in 2634 ms on localhost (executor driver) (2/4)
+20/10/12 19:33:27 INFO PythonRunner: Times: total = 2530, boot = -6602, init = 6623, finish = 2509
+20/10/12 19:33:27 INFO Executor: Finished task 0.0 in stage 8.0 (TID 32). 1421 bytes result sent to driver
+20/10/12 19:33:27 INFO TaskSetManager: Finished task 0.0 in stage 8.0 (TID 32) in 2668 ms on localhost (executor driver) (3/4)
+20/10/12 19:33:28 INFO PythonRunner: Times: total = 2849, boot = -6508, init = 6520, finish = 2837
+20/10/12 19:33:28 INFO Executor: Finished task 3.0 in stage 8.0 (TID 35). 1421 bytes result sent to driver
+20/10/12 19:33:28 INFO TaskSetManager: Finished task 3.0 in stage 8.0 (TID 35) in 2884 ms on localhost (executor driver) (4/4)
+20/10/12 19:33:28 INFO TaskSchedulerImpl: Removed TaskSet 8.0, whose tasks have all completed, from pool 
+20/10/12 19:33:28 INFO DAGScheduler: ResultStage 8 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) finished in 3.014 s
+20/10/12 19:33:28 INFO DAGScheduler: Job 8 finished: count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43, took 3.017892 s
+20/10/12 19:33:34 INFO SparkContext: Starting job: count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43
+20/10/12 19:33:34 INFO DAGScheduler: Got job 9 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) with 4 output partitions
+20/10/12 19:33:34 INFO DAGScheduler: Final stage: ResultStage 9 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43)
+20/10/12 19:33:34 INFO DAGScheduler: Parents of final stage: List()
+20/10/12 19:33:34 INFO DAGScheduler: Missing parents: List()
+20/10/12 19:33:34 INFO DAGScheduler: Submitting ResultStage 9 (PythonRDD[19] at count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43), which has no missing parents
+20/10/12 19:33:34 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 6.0 KB, free 366.1 MB)
+20/10/12 19:33:34 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 4.0 KB, free 366.1 MB)
+20/10/12 19:33:34 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on spark-master:42553 (size: 4.0 KB, free: 366.1 MB)
+20/10/12 19:33:34 INFO SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:1163
+20/10/12 19:33:34 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 9 (PythonRDD[19] at count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+20/10/12 19:33:34 INFO TaskSchedulerImpl: Adding task set 9.0 with 4 tasks
+20/10/12 19:33:34 WARN TaskSetManager: Stage 9 contains a task of very large size (12132 KB). The maximum recommended task size is 100 KB.
+20/10/12 19:33:34 INFO TaskSetManager: Starting task 0.0 in stage 9.0 (TID 36, localhost, executor driver, partition 0, PROCESS_LOCAL, 12423264 bytes)
+20/10/12 19:33:34 INFO TaskSetManager: Starting task 1.0 in stage 9.0 (TID 37, localhost, executor driver, partition 1, PROCESS_LOCAL, 12559732 bytes)
+20/10/12 19:33:34 INFO TaskSetManager: Starting task 2.0 in stage 9.0 (TID 38, localhost, executor driver, partition 2, PROCESS_LOCAL, 12554592 bytes)
+20/10/12 19:33:34 INFO TaskSetManager: Starting task 3.0 in stage 9.0 (TID 39, localhost, executor driver, partition 3, PROCESS_LOCAL, 12557810 bytes)
+20/10/12 19:33:34 INFO Executor: Running task 0.0 in stage 9.0 (TID 36)
+20/10/12 19:33:34 INFO Executor: Running task 2.0 in stage 9.0 (TID 38)
+20/10/12 19:33:34 INFO Executor: Running task 1.0 in stage 9.0 (TID 37)
+20/10/12 19:33:34 INFO Executor: Running task 3.0 in stage 9.0 (TID 39)
+20/10/12 19:33:36 INFO PythonRunner: Times: total = 1848, boot = -6847, init = 6854, finish = 1841
+20/10/12 19:33:36 INFO Executor: Finished task 1.0 in stage 9.0 (TID 37). 1421 bytes result sent to driver
+20/10/12 19:33:36 INFO TaskSetManager: Finished task 1.0 in stage 9.0 (TID 37) in 1924 ms on localhost (executor driver) (1/4)
+20/10/12 19:33:36 INFO PythonRunner: Times: total = 1869, boot = -6527, init = 6542, finish = 1854
+20/10/12 19:33:36 INFO Executor: Finished task 3.0 in stage 9.0 (TID 39). 1421 bytes result sent to driver
+20/10/12 19:33:36 INFO TaskSetManager: Finished task 3.0 in stage 9.0 (TID 39) in 1905 ms on localhost (executor driver) (2/4)
+20/10/12 19:33:36 INFO PythonRunner: Times: total = 2011, boot = -6878, init = 6884, finish = 2005
+20/10/12 19:33:36 INFO Executor: Finished task 2.0 in stage 9.0 (TID 38). 1421 bytes result sent to driver
+20/10/12 19:33:36 INFO TaskSetManager: Finished task 2.0 in stage 9.0 (TID 38) in 2078 ms on localhost (executor driver) (3/4)
+20/10/12 19:33:36 INFO PythonRunner: Times: total = 2033, boot = -6905, init = 6917, finish = 2021
+20/10/12 19:33:36 INFO Executor: Finished task 0.0 in stage 9.0 (TID 36). 1421 bytes result sent to driver
+20/10/12 19:33:36 INFO TaskSetManager: Finished task 0.0 in stage 9.0 (TID 36) in 2110 ms on localhost (executor driver) (4/4)
+20/10/12 19:33:36 INFO TaskSchedulerImpl: Removed TaskSet 9.0, whose tasks have all completed, from pool 
+20/10/12 19:33:36 INFO DAGScheduler: ResultStage 9 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) finished in 2.121 s
+20/10/12 19:33:36 INFO DAGScheduler: Job 9 finished: count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43, took 2.131501 s
+20/10/12 19:33:40 INFO SparkContext: Invoking stop() from shutdown hook
+20/10/12 19:33:40 INFO ContextCleaner: Cleaned accumulator 217
+20/10/12 19:33:40 INFO ContextCleaner: Cleaned accumulator 214
+20/10/12 19:33:40 INFO BlockManagerInfo: Removed broadcast_8_piece0 on spark-master:42553 in memory (size: 4.0 KB, free: 366.1 MB)
+20/10/12 19:33:40 INFO ContextCleaner: Cleaned accumulator 248
+20/10/12 19:33:40 INFO ContextCleaner: Cleaned accumulator 233
+20/10/12 19:33:40 INFO ContextCleaner: Cleaned accumulator 235
+20/10/12 19:33:40 INFO ContextCleaner: Cleaned accumulator 212
+20/10/12 19:33:40 INFO ContextCleaner: Cleaned accumulator 230
+20/10/12 19:33:40 INFO ContextCleaner: Cleaned accumulator 234
+20/10/12 19:33:40 INFO ContextCleaner: Cleaned accumulator 226
+20/10/12 19:33:40 INFO ContextCleaner: Cleaned accumulator 238
+20/10/12 19:33:40 INFO ContextCleaner: Cleaned accumulator 0
+20/10/12 19:33:40 INFO ContextCleaner: Cleaned accumulator 204
+20/10/12 19:33:40 INFO ContextCleaner: Cleaned accumulator 201
+20/10/12 19:33:40 INFO ContextCleaner: Cleaned accumulator 215
+20/10/12 19:33:40 INFO SparkUI: Stopped Spark web UI at http://spark-master:4041
+20/10/12 19:33:40 INFO BlockManagerInfo: Removed broadcast_9_piece0 on spark-master:42553 in memory (size: 4.0 KB, free: 366.1 MB)
+20/10/12 19:33:40 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+20/10/12 19:33:40 INFO MemoryStore: MemoryStore cleared
+20/10/12 19:33:40 INFO BlockManager: BlockManager stopped
+20/10/12 19:33:40 INFO BlockManagerMaster: BlockManagerMaster stopped
+20/10/12 19:33:40 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+20/10/12 19:33:40 INFO SparkContext: Successfully stopped SparkContext
+20/10/12 19:33:40 INFO ShutdownHookManager: Shutdown hook called
+20/10/12 19:33:40 INFO ShutdownHookManager: Deleting directory /tmp/spark-67b3745b-4bab-4726-b7c2-5c99c85a466c
+20/10/12 19:33:40 INFO ShutdownHookManager: Deleting directory /tmp/spark-67b3745b-4bab-4726-b7c2-5c99c85a466c/pyspark-32a11f2d-244f-448a-b750-7fe9befc46ea
+20/10/12 19:33:40 INFO ShutdownHookManager: Deleting directory /tmp/spark-75977496-d1b3-41fe-a5a7-f234d750b7c5

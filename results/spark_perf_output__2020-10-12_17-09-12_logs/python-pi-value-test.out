@@ -1,0 +1,7 @@
+--------------------------------------------------------------------
+Java options: -Dspark.storage.memoryFraction=0.66 -Dspark.serializer=org.apache.spark.serializer.JavaSerializer -Dspark.locality.wait=60000000
+Options: Valueofpi --num-tasks=100000000 --num-trials=10 --inter-trial-wait=3
+--------------------------------------------------------------------
+*******************************************************************
+run test: Valueofpi
+100000000

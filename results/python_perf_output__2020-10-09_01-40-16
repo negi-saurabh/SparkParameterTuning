@@ -1,8 +1,0 @@
-python-scheduling-throughput, SchedulerThroughputTest --num-tasks=5000 --num-trials=10 --inter-trial-wait=3, 62.532, 0.582, 61.868, 61.868, 61.992
-
-python-agg-by-key, AggregateByKey --num-trials=10 --inter-trial-wait=3 --num-partitions=20 --reduce-tasks=20 --random-seed=5 --persistent-type=memory  --num-records=10000000 --unique-keys=1000 --key-length=10 --unique-values=50000 --value-length=10  --storage-location=hdfs://spark-master:9000/test//spark-perf-kv-data, 4.6875, 0.264, 4.42, 4.709, 4.666
-
-python-agg-by-key-int, AggregateByKeyInt --num-trials=10 --inter-trial-wait=3 --num-partitions=40 --reduce-tasks=40 --random-seed=5 --persistent-type=memory  --num-records=20000000 --unique-keys=2000 --key-length=10 --unique-values=100000 --value-length=10  --storage-location=hdfs://spark-master:9000/test//spark-perf-kv-data, 6.213, 0.499, 5.713, 5.713, 6.041
-
-python-agg-by-key-naive, AggregateByKeyNaive --num-trials=10 --inter-trial-wait=3 --num-partitions=20 --reduce-tasks=20 --random-seed=5 --persistent-type=memory  --num-records=10000000 --unique-keys=1000 --key-length=10 --unique-values=50000 --value-length=10  --storage-location=hdfs://spark-master:9000/test//spark-perf-kv-data, 7.6995, 0.562, 6.709, 8.088, 7.384
-

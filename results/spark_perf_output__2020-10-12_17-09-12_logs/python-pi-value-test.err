@@ -1,0 +1,85 @@
+--------------------------------------------------------------------
+Java options: -Dspark.storage.memoryFraction=0.66 -Dspark.serializer=org.apache.spark.serializer.JavaSerializer -Dspark.locality.wait=60000000
+Options: Valueofpi --num-tasks=100000000 --num-trials=10 --inter-trial-wait=3
+--------------------------------------------------------------------
+20/10/12 17:09:40 DEBUG NativeCodeLoader: Trying to load the custom-built native-hadoop library...
+OpenJDK Server VM warning: You have loaded library /usr/local/hadoop/lib/native/libhadoop.so.1.0.0 which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+20/10/12 17:09:40 DEBUG NativeCodeLoader: Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: /usr/local/hadoop/lib/native/libhadoop.so.1.0.0: /usr/local/hadoop/lib/native/libhadoop.so.1.0.0: wrong ELF class: ELFCLASS64 (Possible cause: architecture word width mismatch)
+20/10/12 17:09:40 DEBUG NativeCodeLoader: java.library.path=:/usr/local/hadoop/lib/native:/usr/java/packages/lib/i386:/usr/lib/i386-linux-gnu/jni:/lib/i386-linux-gnu:/usr/lib/i386-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+20/10/12 17:09:40 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/10/12 17:09:41 INFO SparkContext: Running Spark version 2.4.6
+20/10/12 17:09:41 WARN SparkConf: Detected deprecated memory fraction settings: [spark.storage.memoryFraction]. As of Spark 1.6, execution and storage memory management are unified. All memory fractions used in the old model are now deprecated and no longer read. If you wish to use the old memory management, you may explicitly enable `spark.memory.useLegacyMode` (not recommended).
+20/10/12 17:09:41 INFO SparkContext: Submitted application: Pi Value Runner
+20/10/12 17:09:41 INFO SecurityManager: Changing view acls to: spark
+20/10/12 17:09:41 INFO SecurityManager: Changing modify acls to: spark
+20/10/12 17:09:41 INFO SecurityManager: Changing view acls groups to: 
+20/10/12 17:09:41 INFO SecurityManager: Changing modify acls groups to: 
+20/10/12 17:09:41 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(spark); groups with view permissions: Set(); users  with modify permissions: Set(spark); groups with modify permissions: Set()
+20/10/12 17:09:41 INFO Utils: Successfully started service 'sparkDriver' on port 37213.
+20/10/12 17:09:41 INFO SparkEnv: Registering MapOutputTracker
+20/10/12 17:09:41 INFO SparkEnv: Registering BlockManagerMaster
+20/10/12 17:09:41 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+20/10/12 17:09:41 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+20/10/12 17:09:41 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-fc069b46-aa38-4529-960d-3dbfe98b05b7
+20/10/12 17:09:41 INFO MemoryStore: MemoryStore started with capacity 366.1 MB
+20/10/12 17:09:41 INFO SparkEnv: Registering OutputCommitCoordinator
+20/10/12 17:09:41 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+20/10/12 17:09:41 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://spark-master:4040
+20/10/12 17:09:42 INFO Executor: Starting executor ID driver on host localhost
+20/10/12 17:09:42 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 44891.
+20/10/12 17:09:42 INFO NettyBlockTransferService: Server created on spark-master:44891
+20/10/12 17:09:42 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+20/10/12 17:09:42 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, spark-master, 44891, None)
+20/10/12 17:09:42 INFO BlockManagerMasterEndpoint: Registering block manager spark-master:44891 with 366.1 MB RAM, BlockManagerId(driver, spark-master, 44891, None)
+20/10/12 17:09:42 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, spark-master, 44891, None)
+20/10/12 17:09:42 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, spark-master, 44891, None)
+20/10/12 17:09:44 INFO EventLoggingListener: Logging events to file:/usr/local/spark/logs/local-1602515382076
+20/10/12 17:10:17 INFO SparkContext: Starting job: count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43
+20/10/12 17:10:17 INFO DAGScheduler: Got job 0 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) with 4 output partitions
+20/10/12 17:10:17 INFO DAGScheduler: Final stage: ResultStage 0 (count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43)
+20/10/12 17:10:17 INFO DAGScheduler: Parents of final stage: List()
+20/10/12 17:10:17 INFO DAGScheduler: Missing parents: List()
+20/10/12 17:10:17 INFO DAGScheduler: Submitting ResultStage 0 (PythonRDD[1] at count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43), which has no missing parents
+20/10/12 17:10:17 WARN SizeEstimator: Failed to check whether UseCompressedOops is set; assuming yes
+20/10/12 17:10:17 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 6.0 KB, free 366.1 MB)
+20/10/12 17:10:17 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 4.0 KB, free 366.1 MB)
+20/10/12 17:10:17 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on spark-master:44891 (size: 4.0 KB, free: 366.1 MB)
+20/10/12 17:10:17 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1163
+20/10/12 17:10:17 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 0 (PythonRDD[1] at count at /home/spark/FinalProject/SparkParameterTuning/piValue-test/piValue.py:43) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+20/10/12 17:10:17 INFO TaskSchedulerImpl: Adding task set 0.0 with 4 tasks
+20/10/12 17:10:18 WARN TaskSetManager: Stage 0 contains a task of very large size (122426 KB). The maximum recommended task size is 100 KB.
+20/10/12 17:10:18 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 125364484 bytes)
+Exception in thread "dispatcher-event-loop-3" java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Arrays.java:3236)
+	at java.io.ByteArrayOutputStream.grow(ByteArrayOutputStream.java:118)
+	at java.io.ByteArrayOutputStream.ensureCapacity(ByteArrayOutputStream.java:93)
+	at java.io.ByteArrayOutputStream.write(ByteArrayOutputStream.java:153)
+	at org.apache.spark.util.ByteBufferOutputStream.write(ByteBufferOutputStream.scala:41)
+	at java.io.ObjectOutputStream$BlockDataOutputStream.drain(ObjectOutputStream.java:1877)
+	at java.io.ObjectOutputStream$BlockDataOutputStream.setBlockDataMode(ObjectOutputStream.java:1786)
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1189)
+	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:348)
+	at org.apache.spark.serializer.JavaSerializationStream.writeObject(JavaSerializer.scala:43)
+	at org.apache.spark.serializer.JavaSerializerInstance.serialize(JavaSerializer.scala:100)
+	at org.apache.spark.scheduler.TaskSetManager$$anonfun$resourceOffer$1.apply(TaskSetManager.scala:486)
+	at org.apache.spark.scheduler.TaskSetManager$$anonfun$resourceOffer$1.apply(TaskSetManager.scala:467)
+	at scala.Option.map(Option.scala:146)
+	at org.apache.spark.scheduler.TaskSetManager.resourceOffer(TaskSetManager.scala:467)
+	at org.apache.spark.scheduler.TaskSchedulerImpl$$anonfun$org$apache$spark$scheduler$TaskSchedulerImpl$$resourceOfferSingleTaskSet$1.apply$mcVI$sp(TaskSchedulerImpl.scala:331)
+	at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:160)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.org$apache$spark$scheduler$TaskSchedulerImpl$$resourceOfferSingleTaskSet(TaskSchedulerImpl.scala:326)
+	at org.apache.spark.scheduler.TaskSchedulerImpl$$anonfun$resourceOffers$4$$anonfun$apply$12.apply(TaskSchedulerImpl.scala:428)
+	at org.apache.spark.scheduler.TaskSchedulerImpl$$anonfun$resourceOffers$4$$anonfun$apply$12.apply(TaskSchedulerImpl.scala:425)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:186)
+	at org.apache.spark.scheduler.TaskSchedulerImpl$$anonfun$resourceOffers$4.apply(TaskSchedulerImpl.scala:425)
+	at org.apache.spark.scheduler.TaskSchedulerImpl$$anonfun$resourceOffers$4.apply(TaskSchedulerImpl.scala:411)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.resourceOffers(TaskSchedulerImpl.scala:411)
+	at org.apache.spark.scheduler.local.LocalEndpoint.reviveOffers(LocalSchedulerBackend.scala:86)
+	at org.apache.spark.scheduler.local.LocalEndpoint$$anonfun$receive$1.applyOrElse(LocalSchedulerBackend.scala:64)
+	at org.apache.spark.rpc.netty.Inbox$$anonfun$process$1.apply$mcV$sp(Inbox.scala:117)
+	at org.apache.spark.rpc.netty.Inbox.safelyCall(Inbox.scala:205)
+	at org.apache.spark.rpc.netty.Inbox.process(Inbox.scala:101)

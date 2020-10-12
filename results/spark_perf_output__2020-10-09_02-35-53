@@ -1,7 +1,0 @@
-# Test name, test options, median, std dev, min, first, last
-scheduling-throughput, scheduling-throughput --num-trials=10 --inter-trial-wait=3 --num-tasks=10000 --num-jobs=1 --closure-size=0 --random-seed=5, 10.641, 2.615, 9.145, 11.257, 14.419
-
-scala-agg-by-key, aggregate-by-key --num-trials=10 --inter-trial-wait=3 --num-partitions=2 --reduce-tasks=2 --random-seed=5 --persistent-type=memory  --num-records=1000000 --unique-keys=100 --key-length=10 --unique-values=5000 --value-length=10  --storage-location=hdfs://spark-master:9000/test//spark-perf-kv-data, 3.3365, 0.267, 3.1, 3.123, 3.332
-
-scala-agg-by-key-int, aggregate-by-key-int --num-trials=10 --inter-trial-wait=3 --num-partitions=4 --reduce-tasks=4 --random-seed=5 --persistent-type=memory  --num-records=2000000 --unique-keys=200 --key-length=10 --unique-values=10000 --value-length=10  --storage-location=hdfs://spark-master:9000/test//spark-perf-kv-data, 0.288, 0.090, 0.223, 0.291, 0.285
-

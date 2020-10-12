@@ -41,7 +41,7 @@ class Valueofpi(PerfTest):
         NUM_SAMPLES = self.options.num_tasks
         print(NUM_SAMPLES)
         count = self.sc.parallelize(range(0, NUM_SAMPLES)).filter(inside).count()
-        print("haha hehe ho ho Pi is roughly %f" % (4.0 * count / NUM_SAMPLES))
+        print("Pi is roughly %f" % (4.0 * count / NUM_SAMPLES))
 
 
 
@@ -56,7 +56,7 @@ if __name__ == "__main__":
     parser.add_option("--inter-trial-wait", type="int", default=0)
     parser.add_option("--list", "-l", action="store_true", help="list all tests")
     parser.add_option("--all", "-a", action="store_true", help="run all tests")
-    print("yes1")
+    print("*******************************************************************")
     options, cases = parser.parse_args()
 
     if options.list:

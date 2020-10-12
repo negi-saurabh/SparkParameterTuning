@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+/usr/local/spark/bin/spark-submit --class com.github.ehiggs.spark.terasort.TeraGen /home/spark/FinalProject/SparkParameterTuning/spark-terasort/target/spark-terasort-1.2-SNAPSHOT-jar-with-dependencies.jar 1g file://$HOME/FinalProject/SparkParameterTuning/spark-terasort/data/terasort_in

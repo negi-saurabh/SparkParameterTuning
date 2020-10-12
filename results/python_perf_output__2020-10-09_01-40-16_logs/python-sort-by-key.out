@@ -1,5 +1,0 @@
---------------------------------------------------------------------
-Java options: -Dspark.storage.memoryFraction=0.66 -Dspark.serializer=org.apache.spark.serializer.JavaSerializer -Dspark.locality.wait=60000000
-Options: SortByKey --num-trials=10 --inter-trial-wait=3 --num-partitions=2 --reduce-tasks=2 --random-seed=5 --persistent-type=memory  --num-records=1000000 --unique-keys=100 --key-length=10 --unique-values=5000 --value-length=10  --storage-location=hdfs://spark-master:9000/test//spark-perf-kv-data
---------------------------------------------------------------------
-run test: SortByKey

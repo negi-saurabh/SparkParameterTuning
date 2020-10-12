@@ -28,6 +28,7 @@ SPARK_CONF_DIR = SPARK_HOME_DIR + "/conf"
 # For Yarn clusters: "yarn"
 # Otherwise, the default uses the specified EC2 cluster
 SPARK_CLUSTER_URL = "local[*]"
+# SPARK_CLUSTER_URL = "spark://%s:7077" % socket.gethostname()
 
 
 # Specify URI to download spark executor. This only applied for running with Mesos.
