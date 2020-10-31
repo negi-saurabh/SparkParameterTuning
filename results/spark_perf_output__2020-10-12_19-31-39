@@ -1,2 +1,0 @@
-python-pi-value-test, Valueofpi --num-tasks=10000000 --num-trials=10 --inter-trial-wait=3, 5.556, 0.786, 5.101, 7.544, 5.367
-

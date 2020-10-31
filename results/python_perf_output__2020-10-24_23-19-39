@@ -1,0 +1,2 @@
+python-agg-by-key, AggregateByKey --num-trials=20 --inter-trial-wait=3 --num-partitions=40 --reduce-tasks=40 --random-seed=5 --persistent-type=memory  --num-records=20000000 --unique-keys=2000 --key-length=10 --unique-values=100000 --value-length=10  --storage-location=hdfs://spark-master:9000/test//spark-perf-kv-data, 17.1645, 1.418, 16.305, 17.357, 18.589
+

@@ -27,7 +27,7 @@ SPARK_CONF_DIR = SPARK_HOME_DIR + "/conf"
 # For local clusters: "spark://%s:7077" % socket.gethostname()
 # For Yarn clusters: "yarn"
 # Otherwise, the default uses the specified EC2 cluster
-SPARK_CLUSTER_URL = "local[*]"
+SPARK_CLUSTER_URL = "local[2]"
 
 
 # Specify URI to download spark executor. This only applied for running with Mesos.
@@ -107,7 +107,7 @@ PYSPARK_OUTPUT_FILENAME = "results/python_perf_output_%s_%s" % (
 # number of records in a generated dataset) if you are running the tests with more
 # or fewer nodes. When developing new test suites, you might want to set this to a small
 # value suitable for a single machine, such as 0.001.
-SCALE_FACTOR = 0.005
+SCALE_FACTOR = 0.10
 
 assert SCALE_FACTOR > 0, "SCALE_FACTOR must be > 0."
 
@@ -140,7 +140,7 @@ COMMON_OPTS = [
     # How many times to run each experiment - used to warm up system caches.
     # This OptionSet should probably only have a single value (i.e., length 1)
     # since it doesn't make sense to have multiple values here.
-    OptionSet("num-trials", [10]),
+    OptionSet("num-trials", [20]),
     # Extra pause added between trials, in seconds. For runs with large amounts
     # of shuffle data, this gives time for buffer cache write-back.
     OptionSet("inter-trial-wait", [3])
@@ -255,37 +255,37 @@ BROADCAST_TEST_OPTS = [
     OptionSet("broadcast-size", [200 << 20], can_scale=True),
 ]
 
-PYSPARK_TESTS += [("python-scheduling-throughput", "core_tests.py",
-    SCALE_FACTOR, COMMON_JAVA_OPTS,
-    [ConstantOption("SchedulerThroughputTest"), OptionSet("num-tasks", [5000])] + COMMON_OPTS)]
+#PYSPARK_TESTS += [("python-scheduling-throughput", "core_tests.py",
+#    SCALE_FACTOR, COMMON_JAVA_OPTS,
+#    [ConstantOption("SchedulerThroughputTest"), OptionSet("num-tasks", [5000])] + COMMON_OPTS)]
 
 PYSPARK_TESTS += [("python-agg-by-key", "core_tests.py", SCALE_FACTOR,
     COMMON_JAVA_OPTS, [ConstantOption("AggregateByKey")] + SPARK_KV_OPTS)]
 
 # Scale the input for this test by 2x since ints are smaller.
-PYSPARK_TESTS += [("python-agg-by-key-int", "core_tests.py", SCALE_FACTOR * 2,
-    COMMON_JAVA_OPTS, [ConstantOption("AggregateByKeyInt")] + SPARK_KV_OPTS)]
+# PYSPARK_TESTS += [("python-agg-by-key-int", "core_tests.py", SCALE_FACTOR * 2,
+#    COMMON_JAVA_OPTS, [ConstantOption("AggregateByKeyInt")] + SPARK_KV_OPTS)]
 
-PYSPARK_TESTS += [("python-agg-by-key-naive", "core_tests.py", SCALE_FACTOR,
-    COMMON_JAVA_OPTS, [ConstantOption("AggregateByKeyNaive")] + SPARK_KV_OPTS)]
+# PYSPARK_TESTS += [("python-agg-by-key-naive", "core_tests.py", SCALE_FACTOR,
+#    COMMON_JAVA_OPTS, [ConstantOption("AggregateByKeyNaive")] + SPARK_KV_OPTS)]
 
 # Scale the input for this test by 0.10.
-PYSPARK_TESTS += [("python-sort-by-key", "core_tests.py", SCALE_FACTOR * 0.1,
-    COMMON_JAVA_OPTS, [ConstantOption("SortByKey")] + SPARK_KV_OPTS)]
+# PYSPARK_TESTS += [("python-sort-by-key", "core_tests.py", SCALE_FACTOR * 0.1,
+#    COMMON_JAVA_OPTS, [ConstantOption("SortByKey")] + SPARK_KV_OPTS)]
 
-PYSPARK_TESTS += [("python-sort-by-key-int", "core_tests.py", SCALE_FACTOR * 0.2,
-    COMMON_JAVA_OPTS, [ConstantOption("SortByKeyInt")] + SPARK_KV_OPTS)]
+# PYSPARK_TESTS += [("python-sort-by-key-int", "core_tests.py", SCALE_FACTOR * 0.2,
+#    COMMON_JAVA_OPTS, [ConstantOption("SortByKeyInt")] + SPARK_KV_OPTS)]
 
-PYSPARK_TESTS += [("python-count", "core_tests.py", SCALE_FACTOR,
-                 COMMON_JAVA_OPTS, [ConstantOption("Count")] + SPARK_KV_OPTS)]
+# PYSPARK_TESTS += [("python-count", "core_tests.py", SCALE_FACTOR,
+#                COMMON_JAVA_OPTS, [ConstantOption("Count")] + SPARK_KV_OPTS)]
 
-PYSPARK_TESTS += [("python-count-w-fltr", "core_tests.py", SCALE_FACTOR,
-    COMMON_JAVA_OPTS, [ConstantOption("CountWithFilter")] + SPARK_KV_OPTS)]
+# PYSPARK_TESTS += [("python-count-w-fltr", "core_tests.py", SCALE_FACTOR,
+#    COMMON_JAVA_OPTS, [ConstantOption("CountWithFilter")] + SPARK_KV_OPTS)]
 
-PYSPARK_TESTS += [("python-broadcast-w-bytes", "core_tests.py", SCALE_FACTOR,
-    COMMON_JAVA_OPTS, [ConstantOption("BroadcastWithBytes")] + SPARK_KV_OPTS + BROADCAST_TEST_OPTS)]
+# PYSPARK_TESTS += [("python-broadcast-w-bytes", "core_tests.py", SCALE_FACTOR,
+#    COMMON_JAVA_OPTS, [ConstantOption("BroadcastWithBytes")] + SPARK_KV_OPTS + BROADCAST_TEST_OPTS)]
 
-PYSPARK_TESTS += [("python-broadcast-w-set", "core_tests.py", SCALE_FACTOR,
-    COMMON_JAVA_OPTS, [ConstantOption("BroadcastWithSet")] + SPARK_KV_OPTS + BROADCAST_TEST_OPTS)]
+# PYSPARK_TESTS += [("python-broadcast-w-set", "core_tests.py", SCALE_FACTOR,
+#    COMMON_JAVA_OPTS, [ConstantOption("BroadcastWithSet")] + SPARK_KV_OPTS + BROADCAST_TEST_OPTS)]
 
 

@@ -27,8 +27,8 @@ SPARK_CONF_DIR = SPARK_HOME_DIR + "/conf"
 # For local clusters: "spark://%s:7077" % socket.gethostname()
 # For Yarn clusters: "yarn"
 # Otherwise, the default uses the specified EC2 cluster
-SPARK_CLUSTER_URL = "local[*]"
-# SPARK_CLUSTER_URL = "spark://%s:7077" % socket.gethostname()
+# SPARK_CLUSTER_URL = "local[*]"
+SPARK_CLUSTER_URL = "spark://192.168.56.103:7077"
 
 
 # Specify URI to download spark executor. This only applied for running with Mesos.
@@ -127,7 +127,7 @@ COMMON_JAVA_OPTS = [
     # Fraction of JVM memory used for caching RDDs.
     JavaOptionSet("spark.storage.memoryFraction", [0.66]),
     JavaOptionSet("spark.serializer", ["org.apache.spark.serializer.JavaSerializer"]),
-    # JavaOptionSet("spark.executor.memory", ["9g"]),
+    JavaOptionSet("spark.executor.memory", ["2g"]),
     # Turn event logging on in order better diagnose failed tests. Off by default as it crashes
     # releases prior to 1.0.2
     # JavaOptionSet("spark.eventLog.enabled", [True]),
@@ -135,7 +135,7 @@ COMMON_JAVA_OPTS = [
     JavaOptionSet("spark.locality.wait", [str(60 * 1000 * 1000)])
 ]
 # Set driver memory here
-SPARK_DRIVER_MEMORY = "512m"
+SPARK_DRIVER_MEMORY = "3g"
 # The following options value sets are shared among all tests.
 COMMON_OPTS = [
     # How many times to run each experiment - used to warm up system caches.

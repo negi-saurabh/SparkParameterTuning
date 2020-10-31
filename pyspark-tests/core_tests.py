@@ -198,7 +198,7 @@ if __name__ == "__main__":
                                   "options": vars(options),
                                   "sparkConf": sparkConfInfo,
                                   "sparkVersion": sc.version,
-                                  "systemProperties": systemProperties,
+#                                  "systemProperties": systemProperties,
                                   "results": results,
                                   "bestResult:": min(results)},
                                  separators=(',', ':'))  # use separators for compact encoding
